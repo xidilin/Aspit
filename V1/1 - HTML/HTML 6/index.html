@@ -2,16 +2,37 @@
 <html>
 <head>
 <title>HTML 5</title>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+</style>
 </head>
 <body>
     <h1>6_html - om sreset og sizes</h1>
-    <img alt="flower_original.jpg" 
+    
+    <!-- src="img/flower_xlow.jpg" -->
+    <!-- img/flower_xlow.jpg 688w, -->
+    <!-- img/flower_low.jpg 1500w, -->
+    <!-- img/flower_medium.jpg 2500w, -->
+    <!-- img/flower_high.jpg 3000w, -->
+    <!-- img/flower_full.jpg 5504w -->
+    <!-- sizes="50vmin" -->
+
+
+    <img
+    alt="flower_original.jpg" 
+    
     srcset="
-    flower_xlow.jpg 688w,
-    flower_low.jpg 1376w,
-    flower_high.jpg 2752w,
-    flower_full.jpg 5504w
+    
+    img/flower_xlow.jpg 688w,
+    img/flower_low.jpg 1500w,
+    img/flower_medium.jpg 2500w,
+    img/flower_high.jpg 3000w,
+    img/flower_full.jpg 5504w
     "
-    sizes="70min">
+    sizes="100vmin"
+    >
 </body>
 </html>
