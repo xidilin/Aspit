@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>HTML 5</title>
+    <!-- <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+    </style> -->
+    <title>HTML 7</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Billeder i html</h1>
-    <p>søgestreng brugt til area tag: area shape="rect" coords. </p>
+    <!-- <h1>Tabeller</h1> -->
+    <h1 style="color:blue;">A Blue Heading</h1>
 
-    <img src="500.jpg" alt="500.jpg" 
-    usemap="#dogpart">
+    <p style="color:red;">A red paragraph.</p>
+    <p>Fordeling af drenge og piger i 4.klasse </p>
 
-    <map name="dogpart">
-        <area shape="rect" coords="90,80,150,206" href="https://en.wikipedia.org/wiki/Tail" alt="Tail">
-        <area shape="rect" coords="401,101,437,138" href="https://en.wikipedia.org/wiki/Snout" alt="Snout">
-      </map>
 
-    <img src="500.jpg" alt="500.jpg" 
-    style="width:200px;height:200px;">
-    <!-- <img src="500.jpg" alt="500.jpg" width="200" height="200"> -->
-    
-    <a href="https://maha.aspitcloud.dk/imgs/600.jpg" target="_blank">
-    <img title="Awesome dog" src="https://maha.aspitcloud.dk/imgs/600.jpg" alt="600.jpg"
-    style="width:200px;height:200px;">
-    </a>
+    <table>
+        <tr>
+            <th></th>
+            <th>Drenge:</th>
+            <th>Piger:</th>
+        </tr>
+        <tr>
+            <td>4. a</td>
+            <td>15</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>4. b</td>
+            <td>17</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>4. c</td>
+            <td>13</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <th colspan="3">I alt i 4. klasse:</th>
+        </tr>
+    </table>
 </body>
+
 </html>
