@@ -1,0 +1,56 @@
+body {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/flower.png ");
+    /* color: white; */
+}
+
+/* h2 {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.png ")
+} */
+
+h2.one {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.png ");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: purple;
+    color: white;
+
+}
+
+h2.two {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.png ");
+    background-repeat: repeat-x;
+    background-position:center;
+    background-color:purple;
+    color: white;
+}
+
+h2.three {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.png ");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    background-color:purple;
+    color: white;
+}
+
+h2.four {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.png ");
+    background-size:cover;
+    background-color:purple;
+    color: white;
+}
+
+.box {
+    background-image: url("https://maha.aspitcloud.dk/v1/imgs/pear.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position:center;
+    /* width: 350px; */
+    background-size: contain, cover;
+}
+
+h3 {
+    background-color:black;
+    color: white;
+
+}
