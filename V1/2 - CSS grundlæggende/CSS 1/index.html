@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS opg 1</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <p id="main">Om CSS</p>
     <p class="question">Hvad er en selector med egne ord?</p>
-    <p class="answer">Det er...(indsæt egne ord her...)</p>
+    <p class="answer">CSS-selectors bruges til at "finde" (eller vælge) de HTML-elementer, du vil formatere. f.eks. h1</p>
     <p class="question">Hvad er en property med egne ord?</p>
-    <p class="answer">Det er...(indsæt egne ord her...)</p>
+    <p class="answer">Det er egenskaber, der kan benyttes af det html element man har pointed til med sin selector f.eks. color</p>
     <p class="question">Hvad er en value med egne ord?</p>
-    <p class="answer">Det er...(indsæt egne ord her...)</p>
+    <p class="answer">Det er værdier du kan indsætte efter din "property" f.eks. color efterfulgt af et ":" kolon så det bliver h1 {color:blue, font-size:12px;} </p>
     <table>
       <caption>
         Oversigt over simple selectors
@@ -30,22 +31,25 @@
       <tr>
         <td>Id</td>
         <td>#someId</td>
-        <td></td>
+        <td>Id-selector bruger id-attributten for et HTML-element til at vælge et bestemt element.
+          Id'et for et element er unikt på en side, så id-vælgeren bruges til at vælge et unikt element!</td>
       </tr>
       <tr>
         <td>Class</td>
-        <td></td>
-        <td></td>
+        <td>.someclass</td>
+        <td>Class-selector vælger HTML-elementer med en bestemt class-attribut.
+          Hvis du vil markere elementer med en bestemt klasse, skal du skrive et punktumstegn (.) efterfulgt af klassenavnet.</td>
       </tr>
       <tr>
         <td>Universal</td>
-        <td></td>
-        <td></td>
+        <td>*</td>
+        <td>Universal-selector (*) markerer alle HTML-elementer på siden.</td>
       </tr>
       <tr>
         <td>Grouping</td>
-        <td></td>
-        <td></td>
+        <td>element1, element2{Property:Value;} eller element1{Property:Value} element2{Property:Value}</td>
+        <td>"Grouping-selector" markerer alle HTML-elementer med den samme "style-definition". Det vil være bedre at gruppere "selektors" for at minimere koden.
+        For at gruppere "selector", skal man adskille hver "Selector" med et komma.</td>
       </tr>
     </table>
   </body>
