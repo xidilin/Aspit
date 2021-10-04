@@ -25,3 +25,10 @@ p {
     background-color: rgb(0, 0, 139)
 }
 
+li:nth-child(odd) {
+    background-color: #ddd;
+  }
+
+li:nth-child(even) {
+    background-color: #bbb;
+  }
