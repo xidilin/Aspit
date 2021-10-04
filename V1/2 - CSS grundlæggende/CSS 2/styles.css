@@ -1,0 +1,27 @@
+body {
+    background-color: #3d9b7d;
+}
+
+p {
+    color: white;
+  }
+
+#p3 {
+    background-color: rgba(10, 150, 0, 0.5);
+    /*green with opacity */
+    }  
+
+    /* background-color: green;
+    opacity: 0.5; */
+
+    /* background-color: rgba(0, 255, 0, 0.5);*/ 
+    /*green with opacity */
+
+#p4 {
+    background-color: hsl(0, 0%, 50%);
+}
+
+#p5 {
+    background-color: rgb(0, 0, 139)
+}
+
