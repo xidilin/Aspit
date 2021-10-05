@@ -1,6 +1,7 @@
 body {
-    background-image: url("https://maha.aspitcloud.dk/v1/imgs/flower.png ");
-    /* color: white; */
+    background-image: url("img/flower.png ");
+    background-position:center;
+    color: white;
 }
 
 /* h2 {
@@ -8,37 +9,38 @@ body {
 } */
 
 h2.one {
-    background-image: url("/img/pear.png");
+    background-image: url("./img/pear.png");
     background-repeat: no-repeat;
     background-position:center;
     background-color: purple;
-    color: white;
+    /* color: white; */
 
 }
 
 h2.two {
-    background-image: url("/img/pear.png");
+    background-image: url("img/pear.png");
     background-repeat: repeat-x;
     background-position:center;
     background-color:purple;
-    color: white;
+    /* color: white; */
 }
 
 h2.three {
-    background-image: url("/img/pear.png");
+    background-image: url("img/pear.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size:contain;
     background-color:purple;
-    color: white;
+    /* color: white; */
 }
 
 h2.four {
     background-image: url("img/pear.png");
     background-position:center;
+    /* width: 1060px; */
     background-size:cover;
     background-color:purple;
-    color: white;
+    /* color: white; */
 }
 
 .box {
@@ -52,6 +54,6 @@ h2.four {
 
 h3 {
     background-color:black;
-    color: white;
+    /* color: white; */
 
 }
