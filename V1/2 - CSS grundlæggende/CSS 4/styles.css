@@ -1,0 +1,81 @@
+html {
+    font-size:62.5%; /* = (.625em) */
+}
+
+body {
+    /* background-color: black; */
+    /* font-family: Verdana, sans-serif; */
+    font-size: 1.8rem;
+    line-height: 140%;
+    /* color: gray; */
+  }
+
+.google {
+    font-family: "Roboto";
+    font-size: 3rem;
+}
+
+@font-face {font-family: myFirstFont;
+    src: url(FiraSans-ExtraLight.otf);
+}
+
+.custom {
+    font-family: myFirstFont;
+    font-size: 3rem;
+}
+
+  /* h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: white;
+  } */
+
+  /* a {
+    color: hotpink;
+  } */
+
+  /* a:link, a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid green;
+    padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  } */
+
+  /* a:hover, a:active {
+    background-color: red;
+  } */
+
+  /* unvisited link */
+/* a:link {
+    color: red;
+    text-decoration: none;
+    background-color: yellow;
+  } */
+  
+  /* visited link */
+  /* a:visited {
+    color: green;
+    text-decoration: none;
+    background-color: cyan;
+  } */
+  
+  /* mouse over link */
+  /* a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+  } */
+  
+  /* selected link */
+  /* a:active {
+    color: blue;
+    text-decoration: underline;
+    background-color: hotpink;
+  } */
+
+
