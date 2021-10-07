@@ -29,6 +29,7 @@ body {
 div.typography {
     font-family: Verdana, sans-serif;
     color: gray;
+    background-color: wheat;
 }
 
 .typography h3 {
