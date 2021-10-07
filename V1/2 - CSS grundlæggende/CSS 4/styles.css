@@ -15,7 +15,8 @@ body {
     font-size: 3rem;
 }
 
-@font-face {font-family: myFirstFont;
+@font-face {
+    font-family: myFirstFont;
     src: url(FiraSans-ExtraLight.otf);
 }
 
@@ -23,6 +24,21 @@ body {
     font-family: myFirstFont;
     font-size: 3rem;
 }
+
+
+div.typography {
+    font-family: Verdana, sans-serif;
+    color: gray;
+}
+
+.typography h3 {
+    font-family: Georgia, serif;
+    color: brown;
+}
+
+/* .typography p{
+    color: brown;
+} */
 
   /* h1 {
     font-family: Georgia, serif;
@@ -51,31 +67,29 @@ body {
   } */
 
   /* unvisited link */
-/* a:link {
-    color: red;
+a:link {
+    color: black;
     text-decoration: none;
-    background-color: yellow;
-  } */
+  }
   
   /* visited link */
   /* a:visited {
-    color: green;
+    color: red;
     text-decoration: none;
-    background-color: cyan;
   } */
   
   /* mouse over link */
-  /* a:hover {
-    color: hotpink;
+  a:hover {
+    color: white;
     text-decoration: underline;
-    background-color: lightgreen;
-  } */
+    background-color: black;
+  }
   
   /* selected link */
-  /* a:active {
-    color: blue;
+  a:active {
+    color: red;
     text-decoration: underline;
-    background-color: hotpink;
-  } */
+    background-color: black;
+  }
 
 
