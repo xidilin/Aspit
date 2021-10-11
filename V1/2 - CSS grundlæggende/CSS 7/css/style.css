@@ -31,17 +31,43 @@ body {
 }
 
   /* unvisited link */
-  a:link {
+a:link {
     color: hsl(194, 100%, 70%);
     text-decoration: underline;
   }
 
-  table {
+table {
     /* display: block; */
     /* padding: 5px; */
   }
 
-  table, tr, th, td {
+table.t1,
+table.t1 tr,
+table.t1 tr th,
+table.t1 tr td {
+    /* margin-left: auto; */
+    border: 2px solid white;
+    border-collapse: collapse;  
+    margin-right: auto;
+    width: 500px;
+}
+
+.male  {
+    border-collapse: collapse;  
+    background-color: #bbb;
+    color: #222
+  }
+
+.female {
+    border-collapse: collapse;  
+    background-color: #ccc;
+    color: #111;
+}
+
+table.t2,
+table.t2 tr,
+table.t2 tr th, 
+table.t2 tr td {
     /* margin-left: auto; */
     border: 2px solid white;
     border-collapse: collapse;  
@@ -50,17 +76,7 @@ body {
 
 }
 
-.male  {
-    background-color: #bbb;
-    color: #222
-  }
-
-.female {
-    background-color: #ccc;
-    color: #111;
-}
-
-  .t2 .male {
+.t2 .male {
     display: none;
   }
 
@@ -86,17 +102,22 @@ body {
 
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
+    color: #111;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #bbb;
 }
 
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
 }
 
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
 }
