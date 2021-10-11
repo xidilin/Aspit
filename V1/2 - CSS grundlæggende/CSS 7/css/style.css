@@ -81,6 +81,7 @@ table.t2 tr td {
   }
 
   .styled-table {
+    display: inline;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
