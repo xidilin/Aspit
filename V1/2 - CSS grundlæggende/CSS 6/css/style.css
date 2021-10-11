@@ -24,12 +24,14 @@
 
 .gallery {
     border: 5px solid purple;
-    width: 760px;
+    /* width: 750px; */
+    width: 85vmin;
     
 }
 
 .gallery img {
-    width: 250px;
+    /* width: 250px; */
+    width: 32.8%;
     background-repeat: no-repeat;
     background-size: contain, cover;
 }
