@@ -1,0 +1,55 @@
+div.parent {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.parent >:nth-child(1) {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 0px;
+}
+
+.parent >:nth-child(2) {
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+}
+
+.parent >:nth-child(3) {
+    position: absolute;
+    z-index: 4;
+    top: 60px;
+    left: 60px;
+}
+
+.parent >:nth-child(4) {
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    left: 90px;
+}
+
+.parent > :nth-child(5) {
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 120px;
+}
+
+.parent > :nth-child(6) {
+    background-color: hsla(39, 100%, 50%, 0.7);
+    /* height: 100px; */
+    line-height: 90px;
+    color: purple;
+    font-size: 3.5rem;
+    position: absolute;
+    z-index: 7;
+    top: 120px;
+    left: 45px;
+    width: 320px;
+    text-align: center;
+}
+
