@@ -190,6 +190,15 @@ hr.new1 {
     height:30px;
 }
 
+/*for vertical line test*/
+
+/* .vertical {
+    height: 300px;
+    border-left: 2px solid black;
+    position: absolute;
+    left: 50%;
+} */
+
 hr.vertical {
     /* height: 300px; */
     /* min-height: 100%; */
@@ -200,9 +209,3 @@ hr.vertical {
     /* left: 50%; */
 }
 
-.vertical {
-    height: 300px;
-    border-left: 2px solid black;
-    position: absolute;
-    left: 50%;
-}
