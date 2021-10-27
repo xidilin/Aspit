@@ -1,0 +1,208 @@
+/* GLOBAL STYLING ########################################### */
+body {
+    background-color: hsl(212, 29%, 19%);
+}
+
+/* UTILITY ################################################## */
+.container {
+    max-width: 1200px;
+    /* float: right; */
+    margin: 0 auto;
+    /* background-position: center; */
+    /* align-content:center; */
+    /* align-items: center; */
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container > article {
+    border-top: 5px solid brown;
+    border-bottom: 5px solid brown;
+    /* background-color: #eee; */
+    content: "";
+    clear: both;
+    display: table;
+    /* overflow: auto; */
+    /* padding: 100x; */
+}
+
+/* .container > article > h2 {
+    font-size: 40px;
+    text-align: center;
+} */
+
+/* .container > article > p {
+    padding-right: 0px;
+    padding-left: 10px;
+    text-align: left;
+} */
+
+/* 
+.container > article > img {
+    float: right;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+} */
+
+.opensans {
+    font-family: "Open Sans";
+    /* font-size: 3rem; */
+    /* font-weight: 300; */
+}
+
+.slabo {
+    font-family: "Slabo 27px";
+}
+
+/* GENERAL STYLING ########################################## */
+
+.layout {
+    border: 1px solid hsl(39, 100%, 50%);
+    background-color: hsl(211, 36%, 84%);
+}
+
+.layout > header {
+    /* height: 100px; */
+}
+
+.layout > header > h1 {
+    /* padding-top: 100px; */
+    /* text-align: center; */
+    /* clear: right; */
+    font-size: 40px;
+}
+
+.layout > header > h2 {
+    /* padding-top: 100px; */
+    /* text-align: center; */
+    /* clear: right; */
+    /* background-color: #eee; */
+    /* font-size: 40px; */
+}
+
+/* .layout > aside {
+    background-color: #e9c46a;
+    float: left;
+    height: 300px;
+    width: 200px;
+} */
+
+/* .layout > aside > h3 {
+    margin: 0px;
+} */
+
+.layout > main {
+    /* background-color: #f4a261; */
+    /* float: left; */
+    /* height: 300px; */
+    /* width: 800px; */
+}
+
+.layout > main > h3 {
+    /* margin: 0px; */
+}
+
+/* HEADER ################################################### */
+
+.flexheader {
+    display: flex;
+    justify-content: center;
+  }
+
+/* NAVIGATION MENU ########################################## */
+
+.navigation {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    /* justify-content:center; */
+    justify-content:space-around;
+    /* gap: 10px 120px; */
+    list-style: none;
+    /* margin: 0;  */
+    background: hsl(212, 29%, 19%);
+    /* align-items: center; */
+    /* align-content:center; */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: transparent underline;
+    text-align: center;
+    display: block;
+    padding: 1em;
+    color: hsl(212, 29%, 79%);
+    transition: all 1.0s ease;
+}
+  
+.navigation a:hover {
+    background: hsl(188, 100%, 26%);
+    text-decoration:  underline;
+    transition: all 0.5s ease;
+}
+
+/* MAIN ################################################# */
+
+.flexmain {
+    display: flex;
+    gap: 1rem;
+}
+
+/* FOOTER ################################################# */
+
+.flexfoot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.layout > footer {
+    /* background-color: #e76f51; */
+    /* clear: left; */
+    /* height: 100px; */
+}
+
+/* Red border */
+hr.new1 {
+    border-bottom: 1px solid red;
+    height:30px;
+}
+
+hr.vertical {
+    /* height: 300px; */
+    /* min-height: 100%; */
+    /* max-height: 100vh; */
+    /* margin: 0; */
+    border-left: 2px solid black;
+    /* position: absolute; */
+    /* left: 50%; */
+}
+
+.vertical {
+    height: 300px;
+    border-left: 2px solid black;
+    position: absolute;
+    left: 50%;
+}
