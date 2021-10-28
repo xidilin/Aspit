@@ -1,0 +1,64 @@
+/* IMPORTS ################################################ */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* GLOBAL STYLING ########################################### */
+body {
+    background-color: #fff;;
+}
+
+/* UTILITY ################################################## */
+.container {
+    max-width: 1200px;
+    /* float: right; */
+    margin: 0 auto;
+    /* background-position: center; */
+    /* align-content:center; */
+    /* align-items: center; */
+    border-radius: 5px;
+}
+
+.pt-sans {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.pt-serif {
+    font-family: 'PT Serif', serif;
+}
+
+.to-uppercase {
+    text-transform: uppercase;
+}
+
+/* NAVIGATION MENU ########################################## */
+
+.navigation {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    /* justify-content:center; */
+    justify-content:space-around;
+    /* gap: 10px 120px; */
+    list-style: none;
+    /* margin: 0;  */
+    background: hsl(212, 29%, 19%);
+    /* align-items: center; */
+    /* align-content:center; */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: transparent underline;
+    text-align: center;
+    display: block;
+    padding: 1em;
+    color: hsl(212, 29%, 79%);
+    transition: all 1.0s ease;
+}
+  
+.navigation a:hover {
+    background: hsl(188, 100%, 26%);
+    text-decoration:  underline;
+    transition: all 0.5s ease;
+}
