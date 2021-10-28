@@ -1,0 +1,171 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ccc;
+
+}
+
+.heading1 {
+    Font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.heading4 {
+    Font-size: 18px;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 15px auto;
+
+}
+
+.parent {
+    display: flex;
+}
+
+.child {
+    
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 42px;
+
+}
+
+.child:nth-child(1) {
+    background-color: red;
+}
+
+.child:nth-child(2) {
+    background-color: green;;
+}
+
+.child:nth-child(3) {
+    background-color: blue;
+}
+
+.child:nth-child(4) {
+    background-color: orange;
+}
+
+.jc-flex-start {
+    justify-content: flex-start;
+}
+
+.jc-flex-end {
+    justify-content: flex-end;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content:space-around;
+}
+
+.jc-space-evenly {
+    justify-content:space-evenly;
+}
+
+.jc-stretch {
+    justify-content:stretch;
+}
+
+.jc-start {
+    justify-content:start;
+}
+
+.jc-end {
+    justify-content:end;
+}
+
+.jc-left {
+    justify-content:left;
+}
+
+.jc-right {
+    justify-content:right;
+}
+
+.jc-normal {
+    justify-content: normal;
+}
+
+.jc-safe-center {
+    justify-content:safe center;
+}
+
+.jc-unsafe-center {
+    justify-content: unsafe center;;
+}
+
+.ai-stretch {
+    align-items:stretch;
+    height: 120px;
+}
+
+.ai-flex-start {
+    align-items: flex-start;
+    height: 120px;
+}
+
+.ai-flex-end {
+    align-items:flex-end;
+    height: 120px;
+}
+
+.ai-center {
+    align-items:center;
+    height: 120px;
+}
+
+.ai-baseline {
+    align-items:baseline;
+    height: 120px;
+}
+
+.ai-first-baseline {
+    align-items:first baseline;
+    height: 120px;
+}
+
+.ai-last-baseline {
+    align-items:last baseline;
+    height: 120px;
+}
+.ai-start {
+    align-items:start;
+    height: 120px;
+}
+
+.ai-end {
+    align-items:end;
+    height: 120px;
+}
+
+.ai-self-start {
+    align-items:self-start;
+    height: 120px;
+}
+
+.ai-self-end {
+    align-items:self-end;
+    height: 120px;
+}
+
+.ai-safe-center {
+    align-items:safe center;
+    height: 120px;
+}
+
+.ai-unsafe-center {
+    align-items: unsafe center;
+    height: 120px;
+}
