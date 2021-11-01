@@ -1,0 +1,87 @@
+.container {
+    width: 570px;
+
+}
+
+.child {
+    
+}
+
+
+.parent {
+    display: flex;
+    width: 570px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.parent > div {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    background-color: #999;
+    margin: 5px;
+}
+
+div.parent > div:nth-child(1) {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div.parent > div:nth-child(2) {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* .div1 {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.div2 {
+    align-items: flex-start;
+    justify-content: center;
+} */
+
+.div3 {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.div4 {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.div5 {
+    align-items: center;
+    justify-content: center;
+}
+
+.div6 {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.div7 {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.div8 {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.div9 {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+div.parent > div > div { 
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    margin: 0px;
+}
