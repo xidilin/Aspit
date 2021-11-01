@@ -1,0 +1,40 @@
+html, 
+body {
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.container header,
+.container footer {
+    height: 50px;
+    background-color: #666;
+}
+
+.container section {
+    flex: 1 1 auto;
+}
+
+.columns {
+    height: 100%;
+    color: black;
+    display: flex;
+    /* flex-flow: row; */
+}
+
+.columns main {
+    background-color: #ccc;
+    flex: 1 1 auto;
+}
+
+.columns aside {
+    flex: 0 1 auto;
+    width: 20%;
+    background-color: #999;
+}
