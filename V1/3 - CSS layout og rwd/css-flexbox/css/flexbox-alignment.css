@@ -179,6 +179,10 @@
 
 [class^='parent container ai'] {
     background-color: black;
-    height: 200px;
+    height: 150px;
     }
 
+[class^='parent container jc'] {
+    background-color: grey;
+    height: 150px;
+    }
