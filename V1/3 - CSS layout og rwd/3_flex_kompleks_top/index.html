@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3_flex_kompleks_top</title>
+    <!-- <title>Øl med: Prisgaranti og 100% Nydelsesgaranti på alle flasker</title> -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-    <div class="container layout opensans">
-        <header class="slabo flexheader">
-            <h1>Lav layout med flexbox</h1>
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">prisgaranti</a></li>
-                <li><a href="#">img logo placeholder</a></li>
-                <li><a href="#">ingen mindstebestilling</a></li>
-            </ul>
-            <ul class="navigation">
-                <li><a href="#">Log ind</a></li>
-                <li><a href="#">img logo placeholder</a></li>
+    <div class="pt-sans">
+        <nav> 
+            <header>
+                <ul class="navigation bgblack cgrey to-uppercase header1">
+                    <li>prisgaranti</li>
+                    <li>•</li>
+                    <li>fri fragt*</li>
+                    <li>•</li>
+                    <li><span>  </span>ingen mindstebestilling</li>
+                </ul>
+            </header>
+            <ul class="container navigation cblack header2">
+                <li class="login pt-serif"><a href="#">Log ind</a></li>
+                <li class="logo"><img src="img/logo.svg" alt="logo placeholder"></li>
             </ul>
             <hr>
-            <ul class="navigation">
+            <ul class="container navigation cblack header3">
                 <li><a href="#">Rødvin</a></li>
                 <li><a href="#">Hvidvin</a></li>
                 <li><a href="#">Bobler</a></li>
@@ -35,10 +37,10 @@
                 <li><a href="#">Spiritus</a></li>
                 <li><a href="#">Øvrige</a></li>
                 <li><a href="#">Nyheder</a></li>
-                <li><a href="#">Search-placeholder</a></li>
+                <li><img src="img/zoom.png" alt="zoom placeholder"><p>Søg</p></li>                
                 <li><a href="#">Img basket placeholder</a></li>
             </ul>
-        </nav>
+        </nav> 
         <main class="flexmain">
             <article>
                 <h2>En overskrift her...</h2>
@@ -54,6 +56,6 @@
         <footer class="flexfoot">
             <h3>Her er noget fint footer-information ©V1</h3>
         </footer>
-</div>
+    </div>
 </body>
 </html>

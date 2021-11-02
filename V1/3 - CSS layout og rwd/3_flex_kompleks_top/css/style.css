@@ -3,18 +3,24 @@
 
 /* GLOBAL STYLING ########################################### */
 body {
-    background-color: #fff;;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
 }
 
 /* UTILITY ################################################## */
 .container {
-    max-width: 1200px;
-    /* float: right; */
+    width: 1200px;
     margin: 0 auto;
+    /* background-position: center; */
+    /* float: right; */
     /* background-position: center; */
     /* align-content:center; */
     /* align-items: center; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
+}
+
+.flex {
+    display: flex;
 }
 
 .pt-sans {
@@ -27,6 +33,25 @@ body {
 
 .to-uppercase {
     text-transform: uppercase;
+    /* text-transform: capitalize; */
+    /* text-transform: lowercase; */
+}
+
+
+/* GENERAL STYLING ########################################## */
+
+.bgblack {
+    background: black;
+}
+
+.cblack,
+.cblack a {
+    color: black;
+}
+
+.cgrey,
+.cgrey a {
+    color:hsl(36, 19%, 95%);
 }
 
 /* NAVIGATION MENU ########################################## */
@@ -37,28 +62,67 @@ body {
     /* flex-direction: row; */
     flex-flow: row wrap;
     /* justify-content:center; */
-    justify-content:space-around;
     /* gap: 10px 120px; */
     list-style: none;
     /* margin: 0;  */
-    background: hsl(212, 29%, 19%);
     /* align-items: center; */
     /* align-content:center; */
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
 }
 
 .navigation a {
     text-decoration: transparent underline;
-    text-align: center;
+    /* text-align: center; */
     display: block;
-    padding: 1em;
-    color: hsl(212, 29%, 79%);
-    transition: all 1.0s ease;
+    /* padding: 1em; */
+    /* padding: 0; */
+    transition: all 0.1s ease;
 }
   
 .navigation a:hover {
     background: hsl(188, 100%, 26%);
     text-decoration:  underline;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
+}
+
+.header1 {
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    height: 25px;
+    /* text-align: center; */
+    /* padding: 1em; */
+}
+
+.header2 {
+    justify-content:center;
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+
+.login {
+    align-self: center;
+    flex: 1 1 0;
+    padding: 0;
+}
+
+.login a {
+    display: inline;
+    border-radius: 22px;
+    border: 2px solid hsl(0, 0%, 80%);
+    padding: 4px 22px;
+    font-weight: bold;
+}
+
+.login a:hover {
+    border: 2px solid #60082b;
+    background-color: white;
+}
+
+.header3 {
+    justify-content:space-between;
 }
