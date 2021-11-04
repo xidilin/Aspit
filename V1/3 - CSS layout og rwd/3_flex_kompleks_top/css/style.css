@@ -107,6 +107,7 @@
                     }
                     
                     .header2 {
+                        background-color: hsl(0, 0%, 100%);
                         justify-content: center;
                         /* align-items: center; */
                         /* align-content: center; */
@@ -136,6 +137,7 @@
                     }
                     
                     .header3 {
+                        background-color: hsl(0, 0%, 100%);
                         /* position: -webkit-sticky; */
                         /* position: sticky; */
                         /* top: 0; */
@@ -171,16 +173,16 @@
                     } */
                     
                     .search {
-                        height: 5vmin;
-                        width: 60vmin;
-                        border: 0px solid #ccc;
-                        box-sizing: border-box;
-                        border-radius: 20px;
-                        background-color: hsl(0, 0%, 93%);
-                        background-image: url(../img/zoom.png);
-                        background-size: 1.5rem;
-                        background-position: 10px center;
-                        background-repeat: no-repeat;
+                        /* height: 5vmin; */
+                        /* width: 60vmin; */
+                        /* border: 0px solid #ccc; */
+                        /* box-sizing: border-box; */
+                        /* border-radius: 20px; */
+                        /* background-color: hsl(0, 0%, 93%); */
+                        /* background-image: url(../img/zoom.png); */
+                        /* background-size: 1.5rem; */
+                        /* background-position: 10px center; */
+                        /* background-repeat: no-repeat; */
                         /* flex: 1 1 auto; */
                         /* flex-grow: 1; */
                         /* flex-shrink: 1; */
@@ -192,6 +194,7 @@
                         /* flex: 1 1 auto; */
                         /* width: 10%; */
                         height: 5vmin;
+                        min-height: 25px;
                         width: 60vmin;
                         /* height: 40px; */
                         /* width: auto; */
@@ -282,7 +285,7 @@
                         /* top: 0; */
                         left: 0;
                         right: 0;
-                        height: 10px;
+                        height: 20px;
                         /* margin-top: -10px; */
                         box-shadow: 0 5px 4px 0 rgb(0 0 0 / 10%);
                         z-index: 40000;
@@ -294,3 +297,7 @@
                     *:after {
                         box-sizing: inherit;
                     } */
+                    
+                    .flexmain {
+                        background-color: hsl(36, 19%, 95%);
+                    }
