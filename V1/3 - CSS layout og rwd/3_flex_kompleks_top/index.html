@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,54 +9,108 @@
     <!-- <title>Øl med: Prisgaranti og 100% Nydelsesgaranti på alle flasker</title> -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 </head>
+
 <body>
     <div class="pt-sans">
-        <nav> 
+        <nav>
             <header>
                 <ul class="navigation bgblack cgrey to-uppercase header1">
                     <li>prisgaranti</li>
                     <li>•</li>
                     <li>fri fragt*</li>
                     <li>•</li>
-                    <li><span>  </span>ingen mindstebestilling</li>
+                    <li><span> </span>ingen mindstebestilling</li>
                 </ul>
             </header>
-            <ul class="container navigation cblack header2">
-                <li class="login pt-serif"><a href="#">Log ind</a></li>
-                <li class="logo"><img src="img/logo.svg" alt="logo placeholder"></li>
-            </ul>
+            <header>
+                <ul class="container navigation cblack header2">
+                    <li class="login pt-serif"><a href="#">Log ind</a></li>
+                    <li class="logo"><img src="img/logo.svg" alt="logo placeholder"></li>
+                </ul>
+            </header>
+        </nav>
+        <nav class="position-sticky shadow-header">
             <hr>
-            <ul class="container navigation cblack header3">
-                <li><a href="#">Rødvin</a></li>
-                <li><a href="#">Hvidvin</a></li>
-                <li><a href="#">Bobler</a></li>
-                <li><a href="#">Portvin</a></li>
-                <li><a href="#">Vinpakker</a></li>
-                <li><a href="#">Spiritus</a></li>
-                <li><a href="#">Øvrige</a></li>
-                <li><a href="#">Nyheder</a></li>
-                <li><img src="img/zoom.png" alt="zoom placeholder"><p>Søg</p></li>                
-                <li><a href="#">Img basket placeholder</a></li>
-            </ul>
-        </nav> 
-        <main class="flexmain">
+            <header>
+                <ul class="container navigation cblack header3">
+                    <li><a href="#">Rødvin</a></li>
+                    <li><a href="#">Hvidvin</a></li>
+                    <li><a href="#">Bobler</a></li>
+                    <li><a href="#">Portvin</a></li>
+                    <li><a href="#">Vinpakker</a></li>
+                    <li><a href="#">Spiritus</a></li>
+                    <li><a href="#">Øvrige</a></li>
+                    <li><a href="#">Nyheder</a></li>
+                    <!-- <li>
+                    <p>Søg</p><img src="img/zoom.png" alt="zoom placeholder">
+                </li> -->
+                    <li class="search">
+                        <!-- <img src="img/zoom.png" alt="zoom placeholder"> -->
+                        <form action="/action_page.php">
+                            <label for="search"></label>
+                            <input id="search" type="text" name="q" value="" placeholder="Søg..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false">
+                        </form>
+                    </li>
+                    <li class="basket">
+                        <form class="flex" action="/action_page.php">
+                            <label for="basket"></label>
+                            <input id="basket" type="image" src="img/basket.png" alt="basket" width="28" height="28">
+                            <!-- <a href="#" src="img/basket.png"></a> -->
+                        </form>
+                    </li>
+                </ul>
+            </header>
+        </nav>
+        <main class=" flexmain ">
             <article>
                 <h2>En overskrift her...</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolores totam illo dignissimos quos sed voluptas odio reiciendis minima. Maxime delectus incidunt voluptatibus! Nihil et quibusdam nesciunt voluptatibus quasi adipisci.</p>
             </article>
-            <hr class="vertical">
+            <hr class="vertical ">
             <article>
                 <h2>En til overskrift</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.</p>
-            </article>               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum
+                    nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae,
+                    ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis!
+                    Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit
+                    perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora,
+                    suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore
+                    tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim
+                    inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate
+                    enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus
+                    voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia
+                    temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi
+                    iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio
+                    autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat
+                    distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit
+                    repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum
+                    reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores,
+                    rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum
+                    asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum asperiores, rerum reprehenderit repellat distinctio autem quasi iure ab quia temporibus voluptate enim inventore tempora, suscipit perspiciatis! Molestiae, ipsum nesciunt.
+                </p>
+            </article>
         </main>
-        <hr class="new1">
-        <footer class="flexfoot">
+        <hr class="new1 ">
+        <footer class="flexfoot ">
             <h3>Her er noget fint footer-information ©V1</h3>
         </footer>
     </div>
 </body>
+
 </html>
