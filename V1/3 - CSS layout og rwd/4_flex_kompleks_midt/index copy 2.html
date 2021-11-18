@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3_flex_kompleks_top</title>
+    <!-- <title>Øl med: Prisgaranti og 100% Nydelsesgaranti på alle flasker</title> -->
+    <link rel="stylesheet" href="css/style copy.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="pt-sans">
+        <nav>
+            <header>
+                <ul class="navigation bgblack cgrey to-uppercase header1">
+                    <li>prisgaranti</li>
+                    <li>•</li>
+                    <li>fri fragt*</li>
+                    <li>•</li>
+                    <li><span> </span>ingen mindstebestilling</li>
+                </ul>
+            </header>
+            <header>
+                <ul class="container navigation cblack header2">
+                    <li class="login pt-serif"><a href="#">Log ind</a></li>
+                    <li class="logo"><img src="img/logo.svg" alt="logo placeholder"></li>
+                </ul>
+            </header>
+        </nav>
+        <nav class="position-sticky shadow-header">
+            <hr>
+            <header>
+                <ul class="container navigation cblack header3">
+                    <li><a href="#">Rødvin</a></li>
+                    <li><a href="#">Hvidvin</a></li>
+                    <li><a href="#">Bobler</a></li>
+                    <li><a href="#">Portvin</a></li>
+                    <li><a href="#">Vinpakker</a></li>
+                    <li><a href="#">Spiritus</a></li>
+                    <li><a href="#">Øvrige</a></li>
+                    <li><a href="#">Nyheder</a></li>
+                    <!-- <li>
+                    <p>Søg</p><img src="img/zoom.png" alt="zoom placeholder">
+                </li> -->
+                    <li class="search">
+                        <!-- <img src="img/zoom.png" alt="zoom placeholder"> -->
+                        <form action="/action_page.php">
+                            <label for="search"></label>
+                            <input id="search" type="search" name="q" value="" placeholder="Søg..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false">
+                        </form>
+                    </li>
+                    <li class="basket">
+                        <form class="flex" action="/action_page.php">
+                            <label for="basket"></label>
+                            <input id="basket" type="image" src="img/basket.png" alt="basket" width="28" height="28">
+                            <!-- <a href="#" src="img/basket.png"></a> -->
+                        </form>
+                    </li>
+                </ul>
+            </header>
+        </nav>
+        <main class=" flexmain ">
+            <article>
+                <h2>En overskrift her...</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolores totam illo dignissimos quos sed voluptas odio reiciendis minima. Maxime delectus incidunt voluptatibus! Nihil et quibusdam nesciunt voluptatibus quasi adipisci.</p>
+                <img src="img/beer1.png" alt="beer1">
+                <img src="img/beer2.png" alt="beer2">
+                <img src="img/beer3.png" alt="beer3">
+                <img src="img/beer4.png" alt="beer4">
+                <img src="img/beer5.png" alt="beer5">
+            </article>
+            <hr class="vertical ">
+            <article>
+                <h2>En til overskrift</h2>
+                <p>
+                </p>
+            </article>
+            <ol class="mainlist flex">
+                <li class="item product product-item v2">
+                    <div class="white-card">
+                        <div class="white-card-product">
+                            <div class="image-wrapper product photo product-item-photo" tabindex="-1">
+                                <a href="#" class="product photo product-item-photo product-item-link" tabindex="-1" data-product-name="Skanderborg Bryghus, Økologisk Blå Jul" data-product-sku="31004" data-product-price="18" onclick="trackProductView(this)"> <span class="product-image-container" style="width:344px;"><span class="product-image-wrapper" style="padding-bottom: 200%;"><img class="product-image-photo" src="img/beer1.png" loading="lazy" width="164" height="328" alt="Skanderborg Bryghus, Økologisk Blå Jul" style="display: block;"></span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="white-card-shopping">
+                            <div class="product-name-wrapper"><a class="product-item-link product-item-name" data-product-name="Skanderborg Bryghus, Økologisk Blå Jul" data-product-sku="31004" data-product-price="18" href="#" onclick="trackProductView(this)"><span>  <strong>Skanderborg Bryghus,</strong> Økologisk Blå Jul </span></a></div>
+                            <div class="product-shopping-wrapper">
+                                <div class="product-price-wrapper">
+                                    <div class="your-price"><span>18,00&nbsp;kr.</span></div>
+                                </div>
+                                <div class="product-actions-wrapper">
+                                    <div class="actions-primary add-to-cart" data-product-sku="31004">
+                                        <form data-role="tocart-form" data-product-sku="31004" action="#" method="post"><input type="hidden" name="product" value="18231"><input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cud2luZWZhbWx5LmNvbS9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5M2QzY3VkMmx1WldaaGJXeDVMbU52YlM5dlpXdyUyQy9wcm9kdWN0LzE4MjMxLw,,">
+                                            <input type="hidden" name="location" value="productlist"><input name="form_key" type="hidden" value="Qpd84Mu3vu9L83SY"> <input type="number" name="qty" value="1" title="Antal" class="input-text qty" data-validate-number="true">
+                                            <button type="submit" title="Læg i kurv" class="action tocart primary"><span class="to-cart-icon"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item product product-item v2">
+                    <div class="white-card">
+                        <div class="white-card-product">
+                            <div class="image-wrapper product photo product-item-photo" tabindex="-1">
+                                <a href="#" class="product photo product-item-photo product-item-link" tabindex="-1" data-product-name="Skanderborg Bryghus, Økologisk Rød Jul" data-product-sku="31005" data-product-price="18" onclick="trackProductView(this)"> <span class="product-image-container" style="width:344px;"><span class="product-image-wrapper" style="padding-bottom: 200%;"><img class="product-image-photo" src="img/beer2.png" loading="lazy" width="164" height="328" alt="Skanderborg Bryghus, Økologisk Rød Jul" style="display: block;"></span></span>
+                                    <style>
+                                        .product-image-container-18232 {
+                                            width: 164px;
+                                        }
+                                        
+                                        .product-image-container-18232 span.product-image-wrapper {
+                                            padding-bottom: 200%;
+                                        }
+                                    </style>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="white-card-shopping">
+                            <div class="product-name-wrapper"><a class="product-item-link product-item-name" data-product-name="Skanderborg Bryghus, Økologisk Rød Jul" data-product-sku="31005" data-product-price="18" href="#" onclick="trackProductView(this)"><span>  <strong>Skanderborg Bryghus,</strong> Økologisk Rød Jul </span></a></div>
+                            <div class="product-shopping-wrapper">
+                                <div class="product-price-wrapper">
+                                    <div class="your-price"><span>18,00&nbsp;kr.</span></div>
+                                </div>
+                                <div class="product-actions-wrapper">
+                                    <div class="actions-primary add-to-cart" data-product-sku="31005">
+                                        <form data-role="tocart-form" data-product-sku="31005" action="#" method="post"><input type="hidden" name="product" value="18232"><input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cud2luZWZhbWx5LmNvbS9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5M2QzY3VkMmx1WldaaGJXeDVMbU52YlM5dlpXdyUyQy9wcm9kdWN0LzE4MjMyLw,,">
+                                            <input type="hidden" name="location" value="productlist"><input name="form_key" type="hidden" value="Qpd84Mu3vu9L83SY"> <input type="number" name="qty" value="1" title="Antal" class="input-text qty" data-validate-number="true">
+                                            <button type="submit" title="Læg i kurv" class="action tocart primary"><span class="to-cart-icon"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item product product-item v2">
+                    <div class="white-card">
+                        <div class="white-card-product">
+
+                            <div class="image-wrapper product photo product-item-photo" tabindex="-1">
+                                <a href="#" class="product photo product-item-photo product-item-link" tabindex="-1" data-product-name="Skanderborg Bryghus, Økologisk Juleknas" data-product-sku="31006" data-product-price="18" onclick="trackProductView(this)"> <span class="product-image-container" style="width:344px;"><span class="product-image-wrapper" style="padding-bottom: 200%;"><img class="product-image-photo" src="img/beer3.png" loading="lazy" width="164" height="328" alt="Skanderborg Bryghus, Økologisk Juleknas" style="display: block;"></span></span>
+                                    <style>
+                                        .product-image-container-18233 {
+                                            width: 164px;
+                                        }
+                                        
+                                        .product-image-container-18233 span.product-image-wrapper {
+                                            padding-bottom: 200%;
+                                        }
+                                    </style>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="white-card-shopping">
+                            <div class="product-name-wrapper"><a class="product-item-link product-item-name" data-product-name="Skanderborg Bryghus, Økologisk Juleknas" data-product-sku="31006" data-product-price="18" href="#" onclick="trackProductView(this)"><span>  <strong>Skanderborg Bryghus,</strong> Økologisk Juleknas </span></a></div>
+                            <div class="product-shopping-wrapper">
+                                <div class="product-price-wrapper">
+                                    <div class="your-price"><span>18,00&nbsp;kr.</span></div>
+                                </div>
+                                <div class="product-actions-wrapper">
+                                    <div class="actions-primary add-to-cart" data-product-sku="31006">
+                                        <form data-role="tocart-form" data-product-sku="31006" action="#" method="post"><input type="hidden" name="product" value="18233"><input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cud2luZWZhbWx5LmNvbS9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5M2QzY3VkMmx1WldaaGJXeDVMbU52YlM5dlpXdyUyQy9wcm9kdWN0LzE4MjMzLw,,">
+                                            <input type="hidden" name="location" value="productlist"><input name="form_key" type="hidden" value="Qpd84Mu3vu9L83SY"> <input type="number" name="qty" value="1" title="Antal" class="input-text qty" data-validate-number="true">
+                                            <button type="submit" title="Læg i kurv" class="action tocart primary"><span class="to-cart-icon"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item product product-item v2">
+                    <div class="white-card">
+                        <div class="white-card-product">
+
+                            <div class="image-wrapper product photo product-item-photo" tabindex="-1">
+                                <a href="#" class="product photo product-item-photo product-item-link" tabindex="-1" data-product-name="Skanderborg Bryghus, Økologisk Humlesne" data-product-sku="31007" data-product-price="18" onclick="trackProductView(this)"> <span class="product-image-container" style="width:344px;"><span class="product-image-wrapper" style="padding-bottom: 200%;"><img class="product-image-photo" src="img/beer4.png" loading="lazy" width="164" height="328" alt="Skanderborg Bryghus, Økologisk Humlesne" style="display: block;"></span></span>
+                                    <style>
+                                        .product-image-container-18234 {
+                                            width: 164px;
+                                        }
+                                        
+                                        .product-image-container-18234 span.product-image-wrapper {
+                                            padding-bottom: 200%;
+                                        }
+                                    </style>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="white-card-shopping">
+                            <div class="product-name-wrapper"><a class="product-item-link product-item-name" data-product-name="Skanderborg Bryghus, Økologisk Humlesne" data-product-sku="31007" data-product-price="18" href="https://www.winefamly.com/skanderborg-bryghus-okologisk-humlesne"
+                                    onclick="trackProductView(this)"><span>  <strong>Skanderborg Bryghus,</strong> Økologisk Humlesne </span></a></div>
+                            <div class="product-shopping-wrapper">
+                                <div class="product-price-wrapper">
+                                    <div class="your-price"><span>18,00&nbsp;kr.</span></div>
+                                </div>
+                                <div class="product-actions-wrapper">
+                                    <div class="actions-primary add-to-cart" data-product-sku="31007">
+                                        <form data-role="tocart-form" data-product-sku="31007" action="#">
+                                            <input type="hidden" name="location" value="productlist"><input name="form_key" type="hidden" value="Qpd84Mu3vu9L83SY"> <input type="number" name="qty" value="1" title="Antal" class="input-text qty" data-validate-number="true">
+                                            <button type="submit" title="Læg i kurv" class="action tocart primary"><span class="to-cart-icon"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item product product-item v2">
+                    <div class="white-card">
+                        <div class="white-card-product">
+
+                            <div class="image-wrapper product photo product-item-photo" tabindex="-1">
+                                <a href="#" class="product photo product-item-photo product-item-link" tabindex="-1" data-product-name="Svaneke bryghus, First Mate Craft Pilsner" data-product-sku="32022" data-product-price="19" onclick="trackProductView(this)"> <span class="product-image-container" style="width:344px;"><span class="product-image-wrapper" style="padding-bottom: 200%;"><img class="product-image-photo" src="img/beer5.png" loading="lazy" width="164" height="328" alt="Svaneke bryghus, First Mate Craft Pilsner" style="display: block;"></span></span>
+                                    <style>
+                                        .product-image-container-13610 {
+                                            width: 164px;
+                                        }
+                                        
+                                        .product-image-container-13610 span.product-image-wrapper {
+                                            padding-bottom: 200%;
+                                        }
+                                    </style>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="white-card-shopping">
+                            <div class="product-name-wrapper"><a class="product-item-link product-item-name" data-product-name="Svaneke bryghus, First Mate Craft Pilsner" data-product-sku="32022" data-product-price="19" href="#" onclick="trackProductView(this)"><span>  <strong>Svaneke bryghus,</strong> First Mate Craft Pilsner </span></a></div>
+                            <div class="product-shopping-wrapper">
+                                <div class="product-price-wrapper">
+                                    <div class="your-price"><span>19,00&nbsp;kr.</span></div>
+                                </div>
+                                <div class="product-actions-wrapper">
+                                    <div class="actions-primary add-to-cart" data-product-sku="32022">
+                                        <form data-role="tocart-form" data-product-sku="32022" action="#">
+                                            <input type="hidden" name="location" value="productlist"><input name="form_key" type="hidden" value="Qpd84Mu3vu9L83SY"> <input type="number" name="qty" value="1" title="Antal" class="input-text qty" data-validate-number="true">
+                                            <button type="submit" title="Læg i kurv" class="action tocart primary"><span class="to-cart-icon"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </main>
+        <hr class="new1 ">
+        <footer class="flexfoot ">
+            <h3>Her er noget fint footer-information ©V1</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
