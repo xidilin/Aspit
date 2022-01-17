@@ -1,3 +1,85 @@
-body {
-    background-color: blue;
+body>header {
+    display: block;
+    background-color: #CCCCCC;
+}
+
+body>header>img:nth-of-type(1) {
+    float: left;
+}
+
+body>header>img:nth-of-type(2) {
+    float: left;
+}
+
+.top a:before {
+    content: "";
+    border-left: transparent rgba(50, 54, 84, 0.8);
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top {
+    max-height: 40px;
+    color: white;
+    background-color: #565952;
+    text-align: center;
+}
+
+.top ul {}
+
+.top nav {
+    display: block;
+    background-color: #CCCCCC;
+}
+
+.top>ul>li {
+    Display: block;
+    float: left;
+    padding: 15px;
+}
+
+nav.side {
+    background-color: rgba(50, 54, 84, 0.8);
+}
+
+.side>ul {
+    Display: block;
+    float: left;
+}
+
+.side>ul>li {
+    float: left;
+    padding: 15px;
+}
+
+body>main>section:nth-of-type(1) {
+    float: left;
+    padding: 15px;
+}
+
+body>main>section:nth-of-type(2) {
+    float: left;
+    padding: 15px;
+}
+
+body>main>section:nth-of-type(1)>article:nth-of-type(1) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(1)>article:nth-of-type(2) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(2)>article:nth-of-type(1) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(2)>article:nth-of-type(2) {
+    /* float: left; */
+}
+
+body>footer {
+    float: left;
 }
