@@ -1,0 +1,119 @@
+body {
+    margin: auto;
+    width: 1200px;
+    color: black;
+}
+
+body>header {
+    /* display: block; */
+    background-color: #CCCCCC;
+    height: 100px;
+}
+
+body>header>img:nth-of-type(1) {
+    /* float: left; */
+}
+
+body>header>img:nth-of-type(2) {
+    /* float: left; */
+}
+
+.top a:before {
+    /* content: ""; */
+    /* border-left: transparent rgba(50, 54, 84, 0.8); */
+    /* border-style: solid; */
+    /* border-width: 0.35em 0 0.35em 0.45em; */
+    /* display: inline-block; */
+    /* margin-right: 10px; */
+}
+
+.top {
+    max-height: 40px;
+    color: white;
+    background-color: #565952;
+    text-align: center;
+}
+
+.top ul {}
+
+.top {
+    /* height: 40px; */
+    /* display: block; */
+    /* background-color: #565952; */
+}
+
+.top>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    /* Display: block; */
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+.top>ul>li::before {
+    content: "\23F5";
+}
+
+.top>ul>li>a::before {
+    content: "";
+    border-left: transparent rgba(50, 54, 84, 0.8);
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav.side {
+    background-color: #CCCCCC;
+}
+
+.side {
+    float: left calc()
+}
+
+.side>ul {
+    list-style-type: none;
+    background-color: rgba(50, 54, 84, 0.8);
+    /* Display: block; */
+    /* float: left; */
+}
+
+.side>ul>li {
+    color: white;
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+body>main>section:nth-of-type(1) {
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+body>main>section:nth-of-type(2) {
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+body>main>section:nth-of-type(1)>article:nth-of-type(1) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(1)>article:nth-of-type(2) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(2)>article:nth-of-type(1) {
+    /* float: left; */
+}
+
+body>main>section:nth-of-type(2)>article:nth-of-type(2) {
+    /* float: left; */
+}
+
+body>footer {
+    height: 40px;
+    background-color: #565952;
+    color: white;
+    text-align: center;
+    /* float: left; */
+}
