@@ -1,30 +1,26 @@
 body {
     margin: auto;
     width: 1200px;
+    height: 150vh;
     color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body>header {
-    /* display: block; */
+    display: inline-block;
     background-color: #CCCCCC;
+    width: 1200px;
     height: 100px;
 }
 
 body>header>img:nth-of-type(1) {
-    /* float: left; */
+    float: left;
+    height: 100%;
 }
 
 body>header>img:nth-of-type(2) {
-    /* float: left; */
-}
-
-.top a:before {
-    /* content: ""; */
-    /* border-left: transparent rgba(50, 54, 84, 0.8); */
-    /* border-style: solid; */
-    /* border-width: 0.35em 0 0.35em 0.45em; */
-    /* display: inline-block; */
-    /* margin-right: 10px; */
+    float: right;
+    height: 100%;
 }
 
 .top {
@@ -32,31 +28,51 @@ body>header>img:nth-of-type(2) {
     color: white;
     background-color: #565952;
     text-align: center;
+    font-weight: bold;
 }
 
-.top ul {}
-
-.top {
-    /* height: 40px; */
-    /* display: block; */
-    /* background-color: #565952; */
+.top>ul {
+    margin: 0;
+    padding: 10px 0px;
 }
 
 .top>ul>li {
-    list-style-type: none;
-    display: inline-block;
+    /* list-style-type: none; */
+    /* display: inline-block; */
     /* Display: block; */
     /* float: left; */
     /* padding: 15px; */
 }
 
-.top>ul>li::before {
-    content: "\23F5";
+.top>ul>li {
+    display: inline-block;
+    border-right: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.top>ul>li>a::before {
+.top>ul>li:last-child {
+    border: none;
+}
+
+.top>ul>li>a:link {
+    padding: 10px;
+}
+
+.top>ul>li>a:hover {
+    background-color: #CCCCCC;
+    padding: 10px 10px;
+    color: rgba(50, 54, 84, 0.8);
+}
+
+.top>ul>li::before {
+    /* color: rgba(50, 54, 84, 0.8); */
+    /* content: "\23F5"; */
+}
+
+.top>ul>li>a:before {
     content: "";
-    border-left: transparent rgba(50, 54, 84, 0.8);
+    border-color: transparent rgba(50, 54, 84, 0.8);
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: inline-block;
@@ -64,56 +80,107 @@ body>header>img:nth-of-type(2) {
 }
 
 nav.side {
-    background-color: #CCCCCC;
+    /* background-color: #CCCCCC; */
 }
 
-.side {
-    float: left calc()
+nav.side {
+    float: left;
+    background-color: #CCCCCC;
+    height: calc(100% - 180px);
+    width: 15%;
 }
 
 .side>ul {
     list-style-type: none;
     background-color: rgba(50, 54, 84, 0.8);
+    margin: 0;
+    padding: 0px 20px;
     /* Display: block; */
     /* float: left; */
 }
 
 .side>ul>li {
-    color: white;
+    border-bottom: 1px solid white;
+    padding: 15px 30px;
     /* float: left; */
     /* padding: 15px; */
 }
 
+.side>ul>li:last-child {
+    border: none;
+}
+
+.side>ul>li>a:hover {
+    font-weight: bolder;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body>main>section:nth-of-type(1) {
-    /* float: left; */
+    float: left;
+    max-width: 40%;
+    margin-left: 10px;
     /* padding: 15px; */
 }
 
 body>main>section:nth-of-type(2) {
-    /* float: left; */
-    /* padding: 15px; */
+    float: right;
+    max-width: 40%;
+    margin-right: 10px;
 }
 
 body>main>section:nth-of-type(1)>article:nth-of-type(1) {
     /* float: left; */
+    height: 430px;
 }
 
 body>main>section:nth-of-type(1)>article:nth-of-type(2) {
     /* float: left; */
+    height: 430px;
 }
 
 body>main>section:nth-of-type(2)>article:nth-of-type(1) {
     /* float: left; */
+    height: 430px;
 }
 
 body>main>section:nth-of-type(2)>article:nth-of-type(2) {
     /* float: left; */
+    height: 430px;
+}
+
+article img {
+    float: left;
+    padding: 0px 20px 0px 0px;
+    width: 100px;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    color: rgba(21, 29, 83, 0.8);
+}
+
+h2 {
+    color: #565952;
+    border-bottom: 1px solid #565952;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 body>footer {
     height: 40px;
+    width: 1200px;
     background-color: #565952;
     color: white;
     text-align: center;
+    display: inline-block;
     /* float: left; */
 }
