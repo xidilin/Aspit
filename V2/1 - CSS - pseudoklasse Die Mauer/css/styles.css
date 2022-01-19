@@ -1,3 +1,9 @@
+body {
+    margin: auto;
+    width: 1200px;
+    color: black;
+}
+
 body>header {
     /* display: block; */
     background-color: #CCCCCC;
@@ -62,7 +68,7 @@ nav.side {
 }
 
 .side {
-    float: left
+    float: left calc()
 }
 
 .side>ul {
