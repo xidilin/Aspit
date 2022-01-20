@@ -82,7 +82,7 @@ body>header>img:nth-of-type(2) {
     /* content: "\23F5"; */
 }
 
-.top>ul>li>a:before {
+.top>ul>li>a::before {
     content: "";
     border-color: transparent rgba(50, 54, 84, 0.8);
     border-style: solid;

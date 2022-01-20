@@ -22,25 +22,43 @@ body {
     "image";
 }
 
+
 .header {
+  display: flex;
   grid-area: header;
+  justify-content: center;
+  align-items: center;
   background-color: darkblue;
 }
 
 .menu {
+  display: grid;
   grid-area: menu;
+  align-items: center;
+  justify-items: center;
   background-color: indianred;
 }
 
 .hero {
+  display: grid;
   grid-area: hero;
+  place-items: center;
   background-color: skyblue;
 }
 
+
 .main {
+  display: grid;
   grid-area: main;
+  place-items: center;
   background-color: rebeccapurple;
 
+}
+
+.banner, .extra, .image {
+  display: grid;
+  place-items: center;
+  color: black;
 }
 
 .banner {
@@ -57,6 +75,10 @@ body {
   grid-area: image;
   background-color: gray;
 }
+
+
+
+/* For tablets: */
 
 @media screen and (min-width: 900px) {
   .grid-container {
@@ -80,3 +102,23 @@ body {
 }
 
 /* Lav en mediaquery til Desktop som er fra 1100 px og op. */
+
+@media screen and (min-width: 1100px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "header menu menu menu menu menu"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "main main main main . image"
+    "main main main main . image"
+    "main main main main . extra"
+    "main main main main . extra"
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner";
+  }
+}
