@@ -1,18 +1,17 @@
 * {
     /* box-sizing: border-box; */
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body
 {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     color: hsl(209, 10%, 100%);
-    grid-template-rows: auto;
+    grid-template-rows: 80px 80px auto 80px;
     grid-template-columns: auto;
-
     grid-template-areas:
         "header"
         "nav"
@@ -22,31 +21,143 @@ body
 
 header
 {   display: grid;
+    align-items: center;
+    justify-items: center;
     background-color: hsl(209, 50%, 30%);
     grid-area: header;
 }
 
 nav
 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
     background-color: hsl(209, 30%, 60%);
     grid-area: nav;
 }
 
 main
 {
+    display: grid;
+    /* place-items: center; */
+    /* align-content: center; */
+    /* align-content: start; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* justify-items: center; */
     background-color: hsl(209, 20%, 80%);
     grid-area: main;
+    /* grid-template-rows: 1fr; */
+    grid-template-rows: 2rem auto;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-areas: */
+
+    /* "main"; */
+
+    /* "h2" */
+    /* "section"; */
+    /* row-gap: 50px; */
+    /* row-gap: -50px; */
+    /* text-align: center; */
+    padding: 2rem;
+    /* min-width: 0; */
+    /* overflow: hidden; */
+    /* grid-template-columns: 1fr 300px; */
+    /* grid-template-columns: minmax(0, 1fr) 300px; */
+    /* overflow: scroll; */
+}
+
+main>h2{
+    display: grid;
+    /* display: flex; */
+    /* display: contents; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* place-self: center; */
+    /* padding: 0px; */
+    /* margin-block-start: 0em; */
+    /* margin-block-end: 0em; */
+    /* grid-area: h2; */
+    /* grid-template-columns: subgrid; */
+    /* row-gap: 50px; */
+    /* grid-row-gap: 50px; */
+    /* grid-column-gap: 10px; */
+    /* text-align: center; */
+    /* place-self: center; */
+    justify-content: center;
+    /* align-content:end; */
+    /* place-content: center; */
+
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+}
+
+main>section{
+    display: grid;
+    /* display: flex; */
+    /* display: contents; */
+    /* align-content: start; */
+    /* padding: 0px; */
+    /* grid-area: section; */
+    /* grid-area: h2; */
+    /* justify-content: center; */
+    /* justify-content: start; */
+}
+
+main>section>h3{
+    /* display: flex; */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* align-content: start;  */
+    padding: 2rem;
+    /* grid-area: main; */
+    /* justify-content: center; */
+    justify-self: center;
+}
+
+main>section>h3:first-of-type{
+    /* display: flex; */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* align-content: start;  */
+    padding: 0 0 2rem 0;
+    /* grid-area: main; */
+    /* justify-content: center; */
+    justify-self: center;
+}
+
+
+main>section>article{
+    /* display: flex; */
+    /* grid-area: main; */
+}
+
+main>section>article:last-of-type{
+    /* display: flex; */
+    /* grid-area: main; */
+    padding: 0 0 2rem 0;
 }
 
 aside
 {
     display: none;
+    align-items: center;
+    justify-items: center;
     background-color: hsl(209, 80%, 50%);
     grid-area: aside;
 }
 
 footer
 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
     background-color: hsl(209, 50%, 30%);
     grid-area: footer;
 }
@@ -54,13 +165,44 @@ footer
 /* Desktop */
 
 @media screen and (min-width: 900px) {
-    body {
-        
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  
-      grid-template-areas: 
-      "header header header header" 
-      "aside nav main aside" 
-      "footer footer footer footer";
-    }
+
+aside{
+    display: grid;
+}
+
+aside:nth-of-type(1){
+    grid-area: aside1;
+}
+
+aside:nth-of-type(2){
+    grid-area: aside2;
+}
+
+main{
+    overflow-y: auto;
+
+}
+    
+body {
+
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+grid-template-areas:
+
+"header header header header header header"
+
+"aside1 nav main main main aside2"
+
+"aside1 nav main main main aside2"
+
+"aside1 nav main main main aside2"
+
+"aside1 nav main main main aside2"
+
+"footer footer footer footer footer footer";
+
+}
+
   }
