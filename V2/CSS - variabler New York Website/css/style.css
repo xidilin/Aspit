@@ -7,12 +7,17 @@
 }
 
 :root {
+    /* --hue:0; */
     --hue: 120;
-    --main-color: hsl(var(--hue), 44%, 81%);
+    --saturation: 44%;
+    --lightning: 81%;
+    --main-color: hsl(var(--hue), var(--saturation), var(--lightning));
+    /* --main-color: hsl(var(--hue), 44%, 81%); */
     --light-main-color: hsl(var(--hue), 44%, 95%);
     --medium-dark-main-color: hsl(var(--hue), 44%, 31%);
     --dark-main-color: hsl(var(--hue), 40%, 11%);
     --border: 2px solid var(--light-main-color);
+    --contrast: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightning));
 }
 
 
@@ -22,6 +27,9 @@ body
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    /* background-color: var(--bg, white);   */
+    /* color: var(--bg-text, black); */
+    background-color: var(--contrast);
 }
 
 /* Header styling */
@@ -41,7 +49,8 @@ header
 header h1
 {
     /* color: #bae4e2; */
-    color: var(--light-main-color);
+
+    color:var(--dark-main-color);
 }
 
 header a
@@ -71,7 +80,7 @@ nav, footer
     background-color: var(--medium-dark-main-color);
     height: 40px;
     /* color: white; */
-    color:var(--dark-main-color);
+    color: var(--light-main-color);
     line-height: 40px;
 }
 
@@ -155,3 +164,19 @@ footer p
 {
     margin-bottom: 0;
 }
+
+/* Without CSS Variables */
+
+/* .btn {  padding: 2rem 4rem;  border: 2px solid black;  background: transparent;  font-size: 0.6em;  border-radius: 2px;} */
+/*on hover */
+/* .btn:hover {  cursor: pointer;  background: black;  color: white;} */
+/* variations */
+/* .btn.red {  border-color: red}.btn.red:hover {  background: red} */
+
+/* with CSS Variables */
+
+/* .btn {   padding: 2rem 4rem;   border: 2px solid var(--color, black);   background: transparent;   font-size: 0.6em;   border-radius: 2px; } */
+ /*on hover*/  
+ /* .btn:hover {  cursor: pointer;   background: var(--color, black);   color: white; } */
+ /* variations */
+ /* .btn.red {   --color: red } */
