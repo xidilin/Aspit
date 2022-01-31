@@ -53,7 +53,7 @@ header h1
     color: #bae4e2;
 }
 
-header a
+header a, header div
 {
     display: flex;
     /* flex-direction: row; */
