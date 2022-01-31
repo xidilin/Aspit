@@ -1,0 +1,256 @@
+/* Reset of all margins and paddings */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hue: 0;
+    --saturation: 0%;
+    --lightning: 0%;
+    --calc: calc(var(--hue));
+    --contrast_hue: calc(var(--hue) + 180);
+    
+    /* --test: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightning)); */
+
+    --header: hsl(calc(var(--hue) + 0), 0%, 80%);
+    --nav_a: hsl(calc(var(--hue) + 0), 0%, 100%);
+    --nav_hover: hsl(calc(var(--hue) + 108), 4%, 74%);
+    --nav-top-footer: hsl(calc(var(--hue) + 86), 4%, 34%);
+    --menu-text: hsl(calc(var(--hue) + 0), 0%, 100%);
+    --top_a_arrow: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8);
+    --nav_side: hsl(calc(var(--hue) + 108), 4%, 74%);
+    
+    --nav_side_ul: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8);
+    --nav_side_ul_contrast: hsla(calc(var(--contrast_hue) + 233), 25%, 26%, 0.8);
+    
+    --nav_side_ul_li: hsl(calc(var(--hue) + 0), 0%, 100%);
+    --h2: hsl(calc(var(--hue) + var(--h2_hue)), var(--h2_saturation), var(--h2_light));
+    --h2_hue: 86;
+    --h2_saturation: 4%;
+    --h2_light: 34%;
+    --h2_border_buttom: hsl(calc(var(--hue) + 108), 4%, 74%);
+    --h3: hsla(calc(var(--hue) + 233), 25%, 26%, 0.9);
+    --h3_contrast: hsl(calc(var(--contrast_hue) + var(--h2_hue)), var(--h2_saturation), var(--h2_light));
+
+    /* --header: hsl(calc(var(--hue) + 0), 0%, 80%); */
+    /* --nav_a: hsl(calc(var(--hue) + 0), 0%, 100%); */
+    /* --nav_hover: hsl(calc(var(--hue) + 108), 4%, 74%); */
+    /* --nav-top-footer: hsl(calc(var(--hue) + 86), 4%, 34%); */
+    /* --menu-text: hsl(calc(var(--hue) + 0), 0%, 100%); */
+    /* --top_a_arrow: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8); */
+    /* --nav_side: hsl(calc(var(--hue) + 108), 4%, 74%); */
+    /* --nav_side_ul: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8); */
+    /* --nav_side_ul_li: hsl(calc(var(--hue) + 0), 0%, 100%); */
+    /* --h2: hsl(calc(var(--hue) + 108), 4%, 74%); */
+    /* --h2_border_buttom: hsl(calc(var(--hue) + 108), 4%, 74%); */
+    /* --h3: hsla(calc(var(--hue) + 233), 25%, 26%, 0.9); */
+    
+    /* --hue: 120; */
+    /* --saturation: 44%; */
+    /* --lightning: 81%; */
+    /* --main-color: hsl(var(--hue), var(--saturation), var(--lightning)); */
+    /* --main-color: hsl(var(--hue), 44%, 81%); */
+    /* --light-main-color: hsl(var(--hue), 44%, 95%); */
+    /* --medium-dark-main-color: hsl(var(--hue), 44%, 31%); */
+    /* --dark-main-color: hsl(var(--hue), 40%, 11%); */
+    /* --border: 2px solid var(--light-main-color); */
+    /* --contrast: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightning)); */
+}
+
+/* Main styling */
+
+body
+{
+    width: 1200px;
+    height: 110vh;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styling */
+
+header
+{
+    background-color: var(--header);
+    height: 100px;
+}
+
+header img
+{
+    height: 100px;
+}
+
+/* General menu styling - applies to both menus (and footer for some properties) */
+
+nav ul
+{
+    list-style-type: none;
+    line-height: 40px;
+}
+
+nav ul a, footer a
+{
+    text-decoration: none;
+    color: var(--nav_a);
+    padding: 0 2em;
+}
+
+nav ul li:hover
+{
+    background-color: var(--nav_hover);
+}
+
+/* Top navigation styling (and some also apply for footer) */
+
+nav.top, footer
+{
+    height: 40px;
+    background-color: var(--nav-top-footer);
+    color: var(--menu-text);
+}
+
+nav.top ul li
+{
+    display: inline-block;
+}
+
+.top>ul>li::before {
+    /* content: "\23F5"; */
+}
+
+.top>ul>li::after {
+    content: "|";
+}
+
+.top>ul>li:last-of-type::after {
+    content: "";
+}
+
+.top>ul>li>a {
+    padding: 0px 30px;
+}
+
+.top>ul>li>a::before {
+    content: "\23F5";
+    color: var(--top_a_arrow);
+    /* border-left: transparent rgba(50, 54, 84, 0.8); */
+    /* border-style: solid; */
+    /* border-width: 0.35em 0 0.35em 0.45em; */
+    /* display: inline-block; */
+    /* margin-right: 10px; */
+}
+
+
+/* Side navigation styling */
+
+nav.side
+{
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: var(--nav_side);
+}
+
+nav.side ul
+{
+    background-color: var(--nav_side_ul);
+    /* background-color: var(--nav_side_ul_contrast); */
+}
+
+nav.side>ul>li {
+    margin: 15px;
+    /* border-left: 10px; */
+    /* border-right: 10px; */
+    border-bottom: 1px solid var(--nav_side_ul_li);
+    /* padding: 15px 30px; */
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+nav.side>ul>li:first-of-type {
+margin-top: 0px;
+}
+
+nav.side ul li a
+{
+    display: block;
+}
+
+/* Footer styling */
+
+footer
+{
+    position: absolute;
+    top: 965px;
+    /* bottom: 0px; */
+    bottom: 0;
+    width: 1200px;
+    text-align: center;
+    line-height: 40px;
+    /* height: 40px; */
+    /* display: block; */
+    /* padding: 0px; */
+}
+
+footer p a {
+    padding: 0px;
+}
+
+/* Styling of content area */
+
+main
+{
+    /* 18% padding on left side to account for the sidebar nav that is 15% wide */
+    padding: 2em 2em 2em 18%; 
+}
+
+/* Section size and positioning */
+
+section
+{
+    width: 45%;
+    height: 100%;
+    font-size: small;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+/* Article styling */
+
+article
+{
+    margin-bottom: 5em;
+}
+
+article img
+{
+    float:left;
+    margin-right: 1em;
+}
+
+h2
+{
+    color: var(--h2);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--h2_border_buttom);
+}
+
+h3
+{
+    /* color: var(--h3); */
+    color: var(--h3_contrast);
+    line-height: 14px;
+    padding-bottom: 2px;
+}
