@@ -187,7 +187,7 @@ p:first-of-type {
 }
 
 h2 {
-    color: #565952;
+    color: hsl(86, 4%, 34%);
     border-bottom: 1px solid #565952;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
