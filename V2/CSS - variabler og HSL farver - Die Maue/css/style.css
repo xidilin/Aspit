@@ -10,30 +10,50 @@
     --hue: 0;
     --saturation: 0%;
     --lightning: 0%;
-    --calc: calc(var(--hue));
+    /* --calc: calc(var(--hue)); */
     --contrast_hue: calc(var(--hue) + 180);
-    
-    /* --test: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightning)); */
 
-    --header: hsl(calc(var(--hue) + 0), 0%, 80%);
-    --nav_a: hsl(calc(var(--hue) + 0), 0%, 100%);
-    --nav_hover: hsl(calc(var(--hue) + 108), 4%, 74%);
-    --nav-top-footer: hsl(calc(var(--hue) + 86), 4%, 34%);
-    --menu-text: hsl(calc(var(--hue) + 0), 0%, 100%);
-    --top_a_arrow: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8);
-    --nav_side: hsl(calc(var(--hue) + 108), 4%, 74%);
+    --primary-color: calc(var(--hue) + 86);
+    --second-color: calc(var(--hue) + 108);
+    --third-color: calc(var(--hue) + 233);
+
+/* var test3, bar; */
+/* test3 = bar = 10; */
+
+    --test4:hsl(var(--test2 +50, +5%, +10%));
+    --test2:hsl(var(--hue) + 100, var(--saturation) + 35%, var(--lightning) + 55%);
+    --test: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightning));
+
+    --header: hsl(var(--hue), 0%, 80%);
+    --nav_a: hsl(var(--hue), 0%, 100%);
+    --nav_hover: hsl(var(--second-color), 4%, 74%);
+    --nav-top-footer: hsl(var(--primary-color), 4%, 34%);
+    --menu-text: hsl(var(--hue), 0%, 100%);
+    --top_a_arrow: hsla(var(--third-color), 25%, 26%, 0.8);
+    --nav_side: hsl(var(--second-color), 4%, 74%);
     
-    --nav_side_ul: hsla(calc(var(--hue) + 233), 25%, 26%, 0.8);
-    --nav_side_ul_contrast: hsla(calc(var(--contrast_hue) + 233), 25%, 26%, 0.8);
-    
-    --nav_side_ul_li: hsl(calc(var(--hue) + 0), 0%, 100%);
-    --h2: hsl(calc(var(--hue) + var(--h2_hue)), var(--h2_saturation), var(--h2_light));
-    --h2_hue: 86;
-    --h2_saturation: 4%;
-    --h2_light: 34%;
-    --h2_border_buttom: hsl(calc(var(--hue) + 108), 4%, 74%);
-    --h3: hsla(calc(var(--hue) + 233), 25%, 26%, 0.9);
-    --h3_contrast: hsl(calc(var(--contrast_hue) + var(--h2_hue)), var(--h2_saturation), var(--h2_light));
+    --nav_side_ul: hsla(var(--third-color), 25%, 26%, 0.8);
+    --nav_side_ul_contrast: hsl(calc(var(--primary-color) + var(--contrast_hue)), 4%, 34%);
+
+    /* --nav_side_ul_contrast: hsl(calc(var(--contrast_hue) + var(--nav_side_ul_hue)), var(--h2_saturation), var(--h2_light)); */
+    /* --nav_side_ul_hue: 86; */
+    /* --nav_side_ul_saturation: 4%; */
+    /* --nav_side_ul_light: 34%; */
+
+
+    --nav_side_ul_li: hsl(var(--hue), 0%, 100%);
+    --h2: hsl(var(--primary-color), 4%, 34%);
+
+    /* --h2: hsl(var(--secondary-color), var(--h2_saturation), var(--h2_light)); */
+    /* --h2_hue: 86; */
+    /* --h2_saturation: 4%; */
+    /* --h2_light: 34%; */
+
+    --h2_border_buttom: hsl(var(--primary-color), 4%, 34%);
+    --h3: hsla(var(--third-color), 25%, 26%, 0.9);
+    --h3_contrast: hsl(calc(var(--primary-color) + var(--contrast_hue)), 4%, 34%);
+
+    /* --h3_contrast: hsl(calc(var(--h2_hue) + var(--contrast_hue)), var(--h2_saturation), var(--h2_light)); */
 
     /* --header: hsl(calc(var(--hue) + 0), 0%, 80%); */
     /* --nav_a: hsl(calc(var(--hue) + 0), 0%, 100%); */
@@ -156,8 +176,8 @@ nav.side
 
 nav.side ul
 {
-    background-color: var(--nav_side_ul);
-    /* background-color: var(--nav_side_ul_contrast); */
+    /* background-color: var(--nav_side_ul); */
+    background-color: var(--nav_side_ul_contrast);
 }
 
 nav.side>ul>li {
@@ -251,6 +271,8 @@ h3
 {
     /* color: var(--h3); */
     color: var(--h3_contrast);
+    /* color: var(--test); */
+    /* color: var(--test2); */
     line-height: 14px;
     padding-bottom: 2px;
 }
