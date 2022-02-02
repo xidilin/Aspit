@@ -8,6 +8,8 @@
 
 body
 {
+    display: block;
+    /* display: flex; */
     font-family: 'Roboto', sans-serif;   
 }
 
@@ -28,28 +30,86 @@ h1, p
 
 nav
 {
+    display: flex; 
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* justify-content: end; */
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
     height: 50px;
-    background-color: hsl(0, 0%, 50%);
+    /* background-color: hsl(0, 0%, 50%); */
 }
 
 nav ul
 {
-    display: none; /* I mobilvisning skal menuen ikke vises, før brugeren har klikket på hamburger menu ikonet */
-    width: 100%;
+    /* I mobilvisning skal menuen ikke vises, før brugeren har klikket på hamburger menu ikonet */
+    /* display: flex; */
+    display: none;
+    /* display: block; */
+    /* display: none; */
+    /* width: 100%; */
+    width: 11rem;
     list-style-type: none;
     text-transform: uppercase;
     font-size: 24px;
+    background-color: hsl(0, 0%, 50%);
+    /* padding: 1rem; */
+    padding-top: 3rem;
+    /* text-align: end; */
+    text-align: center;
+    row-gap: 10px;
+}
+
+nav .menu-btn:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    /* display: none; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* visibility: visible; */
+}
+
+nav .menu-btn:checked ~ ul li
+{
+
+}
+
+
+nav ul li
+{
+    list-style-type: none;
 }
 
 nav ul li:hover
 {
-    background-color: hsla(0, 0%, 100%, 0.3);
+    /* background-color: hsla(0, 0%, 100%, 0.3); */
 }
 
 nav ul li a
 {
+    /* align-self: center; */
     text-decoration: none;
-    padding: 1rem;
+    /* text-align: center; */
+    /* width: 100%; */
+    /* padding: 5px; */
+    /* margin: 2rem; */
+    /* padding-left: 0; */
+}
+
+nav ul li a:hover
+{
+    /* align-self: center; */
+    /* text-decoration: none; */
+    /* padding: 1rem; */
+    /* padding-left: 0; */
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+nav .menu-btn:checked ~ ul a {
+
 }
 
 /* Fælles styling for checkbox og menuikoner */
@@ -64,11 +124,17 @@ nav .menu-btn, nav>img
 /* Separat styling for checkbox */
 nav .menu-btn
 {
+    /* display: none; */
     display: block;
     width: 40px;
     z-index: 7;
     opacity: 0;
     cursor: pointer;
+}
+
+nav input.menu-btn
+{
+    /* display: none; */
 }
 
 /* Separat styling for menuikoner */
@@ -80,6 +146,13 @@ nav>img
 nav .menu-btn ~ .menuicon
 {
     display: block;
+    /* display: none; */
+}
+
+nav .menu-btn:checked ~ .menuicon
+{
+    display: none;
+    /* display: none; */
 }
 
 nav .menu-btn ~ .closeicon
@@ -87,13 +160,31 @@ nav .menu-btn ~ .closeicon
     display: none;
 }
 
+nav .menu-btn:checked ~ .closeicon
+{
+    display: block;
+}
+
+
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 
 @media only screen and (min-width: 768px)
 {
+
+    body
+    {
+        display: block;
+    }
+
     nav
     {
         line-height: 50px;
+        background-color: hsl(0, 0%, 50%);
+    }
+
+    nav .menu-btn:checked
+    {
+        /* display: none; */
     }
 
     nav .menu-btn ~ .menuicon
@@ -106,11 +197,24 @@ nav .menu-btn ~ .closeicon
         display: none;
     }
 
+    nav .menu-btn:checked ~ .closeicon
+{
+    display: none;
+}
+
+    nav .menu-btn:checked ~ ul {
+        display: none;
+        /* background-color: none; */
+    }
+
     nav ul
     {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         height: auto;   
+        padding: 0rem;
+        width: 100%;
     }
 
     nav ul li
@@ -120,12 +224,15 @@ nav .menu-btn ~ .closeicon
 
     nav ul li a
     {
+        /* align-self: auto; */
         color: gainsboro;
+        padding: 1rem;
     }
 
     nav ul li:hover a
     {
         color: darkslategray;
     }
+    
 }
 
