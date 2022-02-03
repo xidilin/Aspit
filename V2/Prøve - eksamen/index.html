@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Bring</title>
+</head>
+<body>
+    <header>
+        <!-- <a href="index.html"> -->
+            <!-- <img src="img/baseline-menu-24px.svg" class="left"> -->
+        
+            <img src="img/logo.svg">
+            <img src="img/baseline-search-24px.svg">
+            <!-- <img src="img/baseline-menu-24px.svg"> -->
+            <!-- <img src="img/hero-02.jpg"> -->
+            <!-- <img src="img/arrow-section.svg"> -->
+
+        <!-- <h1>Bring</h1> -->
+        
+        <!-- <img src="img/arrow-section.svg"> -->
+        <!-- <img src="img/baseline-keyboard-arrow-down.svg"> -->
+        <!-- <img src="img/baseline-keyboard-arrow-right.svg"> -->
+        <!-- <img src="img/baseline-keyboard-arrow-up.svg"> -->
+        <!-- <img src="img/baseline-menu-24px.svg"> -->
+        <!-- <img src="img/baseline-search-24px.svg"> -->
+        <!-- <img src="img/bring-map-nordic.png"> -->
+        <!-- <img src="img/budbil1.jpg"> -->
+        <!-- <img src="img/cargo-illustration.png"> -->
+        <!-- <img src="img/courier-illustration.png"> -->
+        <!-- <img src="img/e-handel.png"> -->
+        <!-- <img src="img/hero-01.jpg"> -->
+        <!-- <img src="img/hero-02.jpg"> -->
+        <!-- <img src="img/icon-sprite-social-media.png"> -->
+        <!-- <img src="img/logo.svg"> -->
+        <!-- <img src="img/mailbox.png"> -->
+        <!-- <img src="img/parcel-illustration.png"> -->
+        <!-- <img src="img/shopping-cart.png"> -->
+        <!-- <img src="img/smiley.png"> -->
+        <!-- <img src="img/tempererat.png"> -->
+        <!-- <img src="img/truck.png"> -->
+
+        <!-- <img src="img/arrow-section.svg" class="right"></a> -->
+        <nav>
+            <!-- Checkbox til at lave "checkbox tricket" - se forklaring i teksten nedenfor -->
+            <input class="menu-btn" type="checkbox">
+            <!-- Hamburger menu ikon -->
+            <img src="img/baseline-menu-24px.svg" alt="hamburger menu icon" class="menuicon">
+            <!-- Luk hamburger menu ikon -->
+            <!-- <img src="img/arrow-section.svg" alt="hamburger close icon" class="closeicon"> -->
+            <img src="img/baseline-menu-24px.svg" alt="hamburger close icon" class="closeicon">
+            
+            <ul>
+                <h3>Hovedmenu</h1>
+                <li>
+                    <!-- Alle links er tomme links, dvs de fører ingen steder hen, når man klikker på dem, men de opfører sig som almindelige links. Et tomt link oprettes ved at skrive "#" i href-attributten -->
+                    <!-- <img src="img/baseline-keyboard-arrow-right.svg" alt="pil"> -->
+                    <a href="#">Forsiden</a>
+                </li>
+                <li>
+                    <a href="#">Tjenester</a>
+                </li>
+                <li>
+                    <a href="#">Om Bring</a>
+                </li>
+                <li>
+                    <a href="#">E-handel</a>
+                </li>
+                <li>
+                    <a href="#">Modtagerservice</a>
+                </li>
+                <li>
+                    <a href="#">Kundeservice</a>
+                </li>
+                <li>
+                    <a href="#">Ledige jobs</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt os</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <h1>Testside</h1> -->
+        <section>
+            <article>
+                <p>På denne side skal du lave en responsiv menu i et niveau.</p>
+                <img src="img/Image1.jpg" alt="arbejdsbillede">
+                <p>Det grundlæggende indhold på siden er lavet for dig. Det samme gælder den grundlæggende styling.</p>
+                <p>Vær opmærksom på, at menulinjen i desktop-versionen er lavet som en vandret flexbox. Den skal i mobil menuen laves om til en lodret flexbox.</p>
+                <p>Desktop menuen er allerede lavet færdig for dig. Det er den styling, der slår igennem i media query'en @media only screen and (min-width: 768px). Du skal lave mobil menuen.</p>
+                <p>Derudover er der anvendt nogle få klasser til hamburger menu ikonerne.</p>
+                <h2>"Checkbox tricket" til mobilmenuer</h2>
+                <p>Hamburger menuen er baseret på et lille trick, som kaldes "checkbox tricket". Det laves ved at sætte en gennemsigtig checkbox foran hamburger menu ikonet (og lukke-ikonet), så i stedet for at klikke på de to ikoner, så klikker man i virkeligheden i en checkbox (afkrydsningsboks) og enten sætter eller fjerner et kryds i den. Checkboxen er gjort usynlig og ligger henover ikonerne til at åbne og lukke menuen, så brugeren får aldrig checkboxen at se (eller de krydser, som han/hun sætter, når menuen bliver åbnet og lukket).</p>
+                <p>Det smarte ved det trick er, at man kan teste på, om brugeren har sat kryds i eller fjernet krydset i checkbox'en vha CSS.</p>
+                <p>CSS pseudo-selectoren :checked kan bruges til den styling, som skal slå igennem, når brugeren har klikket på checkboxen (hamburger menu ikonet).</p>
+                <p>Så hvis du styler på nav .menu-btn:checked ~ul, så styler du på den ul, som kommer i samme niveau som din checkbox (~ tegnet betyder, at den er søskende til din checkbox). Ul'en i samme niveau som din checkbox er din menu. Styling på .menu-btn:checked ~ul slår kun igennem, hvis brugeren har klikket på checkboxen og "sat kryds i den", selvom brugeren aldrig kommer til at se det kryds.</p>
+                <p>Når du åbner siden i din browser, så tjek sidens responsivitet ved at trække vinduet bredere og smallere. På siden her er der sat et responsivt breakpoint ved 768px. Pas på med at bruge den responsive visning, som findes i "inspicer"/"udviklerværktøjet" - de kan godt give en forkert visning.</p>
+                <p>Hvis du har brug for mere hjælp til at løse opgaven, så spørg Hanne!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169;AspIT</p>
+    </footer>
+</body>
+</html>
