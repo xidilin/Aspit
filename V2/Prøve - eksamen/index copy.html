@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styless.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,22 @@
         <!-- <a href="index.html"> -->
             <!-- <img src="img/baseline-menu-24px.svg" class="left"> -->
         
-            <img src="img/logo.svg">
-            <img src="img/baseline-search-24px.svg">
+            <img src="img/logo.svg" alt="logo" class="logoicon">
+            <img src="img/baseline-search-24px.svg" alt="search" class="searchicon">
             <!-- <img src="img/baseline-menu-24px.svg"> -->
             <!-- <img src="img/hero-02.jpg"> -->
             <!-- <img src="img/arrow-section.svg"> -->
 
-        <!-- <h1>Bring</h1> -->
+            <!-- <h1>Bring</h1> -->
         
+            <!-- Checkbox til at lave "checkbox tricket" - se forklaring i teksten nedenfor -->
+            <input class="menu-btn" type="checkbox">
+            <!-- Hamburger menu ikon -->
+            <img src="img/baseline-menu-24px.svg" alt="hamburger menu icon" class="menuicon">
+            <!-- Luk hamburger menu ikon -->
+            <!-- <img src="img/arrow-section.svg" alt="hamburger close icon" class="closeicon"> -->
+            <img src="img/baseline-menu-24px.svg" alt="hamburger close icon" class="closeicon">
+
         <!-- <img src="img/arrow-section.svg"> -->
         <!-- <img src="img/baseline-keyboard-arrow-down.svg"> -->
         <!-- <img src="img/baseline-keyboard-arrow-right.svg"> -->
@@ -48,14 +56,6 @@
 
         <!-- <img src="img/arrow-section.svg" class="right"></a> -->
         <nav>
-            <!-- Checkbox til at lave "checkbox tricket" - se forklaring i teksten nedenfor -->
-            <input class="menu-btn" type="checkbox">
-            <!-- Hamburger menu ikon -->
-            <img src="img/baseline-menu-24px.svg" alt="hamburger menu icon" class="menuicon">
-            <!-- Luk hamburger menu ikon -->
-            <!-- <img src="img/arrow-section.svg" alt="hamburger close icon" class="closeicon"> -->
-            <img src="img/baseline-menu-24px.svg" alt="hamburger close icon" class="closeicon">
-            
             <ul>
                 <h3>Hovedmenu</h1>
                 <li>
@@ -98,6 +98,33 @@
     <main>
         <!-- <h1>Testside</h1> -->
         <section>
+            <!-- <img src="img/hero-02.jpg"> -->
+            <article>
+                <h1>test</h1>
+                <p>På denne side skal du lave en responsiv menu i et niveau.</p>
+                <img src="img/Image1.jpg" alt="arbejdsbillede">
+                <p>Det grundlæggende indhold på siden er lavet for dig. Det samme gælder den grundlæggende styling.</p>
+                <p>Vær opmærksom på, at menulinjen i desktop-versionen er lavet som en vandret flexbox. Den skal i mobil menuen laves om til en lodret flexbox.</p>
+                <p>Desktop menuen er allerede lavet færdig for dig. Det er den styling, der slår igennem i media query'en @media only screen and (min-width: 768px). Du skal lave mobil menuen.</p>
+                <p>Derudover er der anvendt nogle få klasser til hamburger menu ikonerne.</p>
+                <h2>"Checkbox tricket" til mobilmenuer</h2>
+                <p>Hamburger menuen er baseret på et lille trick, som kaldes "checkbox tricket". Det laves ved at sætte en gennemsigtig checkbox foran hamburger menu ikonet (og lukke-ikonet), så i stedet for at klikke på de to ikoner, så klikker man i virkeligheden i en checkbox (afkrydsningsboks) og enten sætter eller fjerner et kryds i den. Checkboxen er gjort usynlig og ligger henover ikonerne til at åbne og lukke menuen, så brugeren får aldrig checkboxen at se (eller de krydser, som han/hun sætter, når menuen bliver åbnet og lukket).</p>
+            </article>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 50" class="section-divide-arrow">
+                <!-- <style type="text/css">
+                    .st0{fill:#fff;}
+                </style> -->
+                <polyline class="st0" points="910,0 960,50 1010,0 1920,0 1920,50 0,50 0,0 "/>
+            </svg>
+        </section>
+        <section>
+            <img src="img/hero-02.jpg">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 50" class="section-divide-arrow">
+                <!-- <style type="text/css">
+                    .st0{fill:#fff;}
+                </style> -->
+                <polyline class="st0" points="910,0 960,50 1010,0 1920,0 1920,50 0,50 0,0 "/>
+            </svg>
             <article>
                 <h1>test</h1>
                 <h2>test2</h2>

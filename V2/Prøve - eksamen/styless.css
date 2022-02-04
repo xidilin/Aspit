@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+h1, p
+{
+    margin: 2rem 0;
+}
+
 body
 {
     /* display: block; */
@@ -18,6 +23,7 @@ body
 header
 {
     display: block;
+    /* display: flex; */
     height: 55px;
     width: 100vw;
     /* position: sticky; */
@@ -37,6 +43,13 @@ header img
     /* right: 10px; */
 }
 
+/* Separat styling for menuikoner */
+header>img
+{
+    z-index: 6;
+    /* height: 40px; */
+}
+
 header>img:nth-of-type(1)
 {
     /* height: 40px; */
@@ -45,26 +58,59 @@ header>img:nth-of-type(1)
     /* right: 10px; */
 }
 
-main
+/* Fælles styling for checkbox og menuikoner */
+.menu-btn, .menuicon, .closeicon
 {
-    margin: 0.5rem;
-    width: 1024px;
+    height: 40px;
+    position: absolute;
+    /* position: sticky; */
+    top: 5px;
+    right: 10px;
 }
 
-main section article img
+/* Separat styling for checkbox */
+.menu-btn
 {
-    width: 100%;
+    /* display: none; */
+    display: block;
+    width: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
 }
 
-h1, p
+input.menu-btn
 {
-    margin: 2rem 0;
+    /* display: none; */
 }
+
+.menu-btn ~ .menuicon
+{
+    display: block;
+    /* display: none; */
+}
+
+.menu-btn:checked ~ .menuicon
+{
+    display: none;
+    /* display: none; */
+}
+
+.menu-btn ~ .closeicon
+{
+    display: none;
+}
+
+.menu-btn:checked ~ .closeicon
+{
+    display: block;
+}
+
 
 nav
 {
-    display: flex; 
-    flex-direction: column;
+    /* display: flex;  */
+    /* flex-direction: column; */
     /* flex-direction: row; */
     /* justify-content: flex-end; */
     /* justify-content: end; */
@@ -95,10 +141,10 @@ nav ul
     row-gap: 10px;
 }
 
-nav .menu-btn:checked ~ ul {
+.menu-btn:checked ~ nav ul {
     display: flex;
     flex-direction: column;
-    transform: translatex(0)
+    /* transform: translatex(0) */
     /* flex-direction: row; */
     /* position: absolute; */
     /* top: 5px; */
@@ -112,27 +158,17 @@ nav .menu-btn:checked ~ ul {
     /* overflow-y: scroll; */
 }
 
-nav .menu-btn:checked ~ ul li::before
-{
-    content: url(img/baseline-keyboard-arrow-right.svg);
-}
-
-nav .menu-btn:checked ~ ul li:last-of-type
-{
-    background-color: hsl(0, 0%, 95%);
-}
-
-nav .menu-btn:checked ~ ul li:last-of-type::before
-{
-    content: none;
-}
-
 nav ul li
 {
     list-style-type: none;
 }
 
-nav .menu-btn:checked ul li::before
+.menu-btn:checked ~ nav ul li::before
+{
+    content: url(img/baseline-keyboard-arrow-right.svg);
+}
+
+.menu-btn:checked nav ul li::before
 {
     /* content: url(img/baseline-keyboard-arrow-right.svg); */
     /* display: inline; */
@@ -142,6 +178,17 @@ nav .menu-btn:checked ul li::before
     /* width: 10px; */
     /* height: 20px; */
 }
+
+.menu-btn:checked ~ nav ul li:last-of-type
+{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.menu-btn:checked ~ nav ul li:last-of-type::before
+{
+    content: none;
+}
+
 
 nav ul li:hover
 {
@@ -168,64 +215,62 @@ nav ul li a:hover
     background-color: hsla(0, 0%, 100%, 0.3);
 }
 
-nav .menu-btn:checked ~ ul a {
+.menu-btn:checked ~ nav ul li a {
 
 }
 
-/* Fælles styling for checkbox og menuikoner */
-nav .menu-btn, nav>img
+main
 {
-    height: 40px;
-    position: absolute;
-    /* position: sticky; */
-    top: 5px;
-    right: 10px;
+    margin: 0.5rem;
+    width: 1024px;
 }
 
-/* Separat styling for checkbox */
-nav .menu-btn
+main img {
+    width: 1024px;
+}
+
+.section-divide-arrow
 {
-    /* display: none; */
-    display: block;
-    width: 40px;
-    z-index: 7;
-    opacity: 0;
-    cursor: pointer;
+    fill:#fff;
+    /* fill:black; */
+    /* fill: white; */
+
 }
 
-nav input.menu-btn
+main section
 {
-    /* display: none; */
+    
 }
 
-/* Separat styling for menuikoner */
-nav>img
+main section:nth-of-type(1)
 {
-    z-index: 6;
+background-image: url(img/hero-02.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+color: white;
 }
 
-nav .menu-btn ~ .menuicon
+main section article
 {
-    display: block;
-    /* display: none; */
+    /* width: 1000px; */
+    margin: 4rem;
 }
 
-nav .menu-btn:checked ~ .menuicon
+main section article img
 {
-    display: none;
-    /* display: none; */
+    width: 100%;
 }
 
-nav .menu-btn ~ .closeicon
+/* main section article img
 {
-    display: none;
-}
+    width: 100%;
+} */
 
-nav .menu-btn:checked ~ .closeicon
+footer 
 {
-    display: block;
-}
 
+}
 
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 
@@ -245,27 +290,27 @@ nav .menu-btn:checked ~ .closeicon
         width: 400px;
     }
 
-    nav .menu-btn:checked
+    .menu-btn:checked
     {
         /* display: none; */
     }
 
-    nav .menu-btn ~ .menuicon
+    .menu-btn ~ .menuicon
     {
         /* display: none; */
     }
 
-    nav input.menu-btn
+    input.menu-btn
     {
         /* display: none; */
     }
 
-    nav .menu-btn:checked ~ .closeicon
+    .menu-btn:checked ~ .closeicon
 {
     /* display: none; */
 }
 
-    nav .menu-btn:checked ~ ul {
+    .menu-btn:checked ~ ul {
         /* display: none; */
         /* background-color: none; */
         position: absolute;
