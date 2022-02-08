@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring - Din vej gennem Norden</title>
+    <link rel="stylesheet" href="stylenat.css">
+</head>
+<body>
+    <div class="body-wrap">
+
+    <!-- X-kommentar: Føler der er godt styr på struktur 
+        og brug af semantiske elementer, i de rette kontekster.
+        f.eks. i header, er logo brugt som link, giver mening
+        (f.eks. til brug til at komme tilbage til forside)
+        samt brug af input type="text" til brug som search felt -->
+
+    <header>
+        <a href="#"><img src="Materialer/logo.svg" class="logo"></a>
+        <input type="checkbox" class="menu-btn">
+        <img src="Materialer/baseline-search-24px.svg" alt="Søg" class="search">
+        <input type="checkbox" class="search-btn">
+        <div class="search-line">
+            <input type="text" class="search-line" placeholder="Indtast Track and Trace" name="search">
+            <button type="submit">Søg</button>
+        </div>
+        <img src="Materialer/baseline-menu-24px.svg" alt="Menu" class="menu">
+        
+        <!-- X-kommentar: Min browsers viewport height er sat til 745px, 
+            så alt tekst ikke kan være der når hovedmenu udvides
+             og kan se Hovedmenu mangler scrollwheel så man kan se resten
+             i div.info.
+             Dette gælder både i dekstop og mobil version. 
+             Havde selv ret meget besvær med at få det til at "virke" :)
+            
+            -->
+        
+        <nav>
+            <ul>
+                <h2>Hovedmenu</h2>
+                <li><a href="#">Forsiden</a></li>
+                <hr>
+                <li><a href="#">Tjenester</a></li>
+                <hr>
+                <li><a href="#">Om Bring</a></li>
+                <hr>
+                <li><a href="#">E-handel</a></li>
+                <hr>
+                <li><a href="#">Modtagerservice</a></li>
+                <hr>
+                <li><a href="#">Kundeservice</a></li>
+                <hr>
+                <li><a href="#">Ledige jobs</a></li>
+                <hr>
+                <li><a href="#">Kontakt os</a></li>
+            </ul>
+
+            <div class="info">
+                <img src="Materialer/logo.svg" alt="Bring Logo">
+                <p>Fuglebækvej 5-9</p>
+                <p>2700 Kastrup</p>
+                <p>Telefon: +45 4396 3466</p>
+                <p>kontakt@bring.dk</p>
+            </div>
+        </nav>
+    </header>
+
+<!-- X-kommentar: Smart brug af span som inline-element, 
+    med link til ID til at navigere rundt, 
+    og interessant kombination af ID, Class 
+    og pseudo-selectors-->
+
+    <main>
+        <section id="hero">
+            <div class="wrapper">
+                <h1>Din vej gennem norden</h1>
+                <p>Komplette løsninger til transport af gods, pakker og post</p>
+                <button class="hero-btn">Læs mere</button>
+            </div>
+            <span class="next"><a href="#tjenester"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+
+        <section id="tjenester">
+            <div class="wrapper">
+                
+                <h1>Tjenester</h1>
+
+                <div class="service-container">
+                <div class="row">
+                    <div class="service">
+                        <a href="#"><img src="Materialer/shopping-cart.png" alt="">
+                        <p>E-handel</p></a>
+                    </div>
+                    
+                    <div class="service">
+                        <a href="#"><img src="Materialer/courier-illustration.png" alt="">
+                        <p>Bud og ekspreslevering</p></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="service">
+                        <a href="#"><img src="Materialer/parcel-illustration.png" alt="">
+                        <p>Pakker</p></a>
+                    </div>
+
+                    <div class="service">
+                        <a href="#"><img src="Materialer/cargo-illustration.png" alt="">
+                        <p>Gods</p></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="service">
+                        <a href="#"><img src="Materialer/tempererat.png" alt="">
+                        <p>Termo</p></a>
+                    </div>
+
+                    <div class="service">
+                        <a href="#"><img src="Materialer/mailbox.png" alt="">
+                        <p>Post og reklamesager</p></a>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <span class="next"><a href="#omBring"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+        <!--  -->
+
+        <section id="omBring">
+            <div class="wrapper">
+                <h1>Om Bring</h1>
+                <img src="Materialer/smiley.png" alt="Smiley">
+                <p>Bring løser hverdagslogistikken for små og store virksomheder i hele Norden.
+                    Hos os får du hjælp til alt fra e-handel til lægemiddeltransporter.
+                    Vi håndterer pakker, bud, post og gods.
+                </p>
+                <p>Vi kan lagre dine varer og har erfaring med tempereret fødevarelogistik.
+                    Vi kan installere den bestilte vaskemaskine for dine kunder,
+                    bære den nyindkøbte sofa ind og samle den.
+                </p>
+                <p>Norden er Brings hjemmemarked. I Sverige har vi en stærk tilstedeværelse
+                    og god leveringskapacitet til jer eller direkte til jeres kunder.
+                    Fra vores nordiske base hjælper vi jer videre med logistik til eller fra 
+                    den øvrige verden uanset trafikart.
+                </p>
+                <p>Hos Bring er vi omkring 6000 medarbejdere, som arbejder for din virksomhed
+                    ud fra tydelige værdier: ærlighed, mod, åbenhed, samarbejde og respekt.
+                </p>
+                <button>Læs mere</button>
+            </div>
+            <span class="next"><a href="#e-handel"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+        <section id="e-handel">
+            <div class="wrapper">
+                <h1>E-handel</h1>
+                <img src="Materialer/e-handel.png" alt="">
+                <p>Læs flere dybdegående artikler om e-handel, læs vores e-handelsrapport
+                    eller se videoklip fra vores seminarer.
+                </p>
+                <button>Læs mere</button>
+            </div>
+            <span class="next"><a href="#modtagerservice"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+        <section id="modtagerservice">
+            <div class="wrapper">
+                <h1>Modtagerservice</h1>
+                <img src="Materialer/truck.png" alt="">
+                <p>Her kan du som er modtager af en pakke, der er sendt med Bring,
+                    få svar på de oftest stillede spørgsmål og se vores telefonnumre
+                    samt e-mailadresser.
+                </p>
+                <button>Læs mere</button>
+            </div>
+            <span class="next"><a href="#kundeservice"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+        <section id="kundeservice">
+            <div class="wrapper">
+                <h1>Kundeservice</h1>
+                <p>I vores kundeservice finder du svar på de oftest stillede spørgsmål,
+                    telefonnumre og email samt adresserne til vores kontorer og terminaler.
+                </p>
+                <ul>
+                    <li>Pakker: 70 28 60 70</li>
+                    <li>Bud: 70 10 31 03</li>
+                    <li>International godstransport: 43 96 34 66</li>
+                    <li>Temperaturkontrolleret transport: +45 96 356 700</li>
+                </ul>
+                <img src="Materialer/bring-map-nordic.png" alt="">
+                <button>Læs mere</button>
+            </div>
+            <span class="next"><a href="#søgJob"><img src="Materialer/baseline-keyboard-arrow-down.svg"></a></span>
+        </section>
+
+        <section id="søgJob">
+            <div class="wrapper">
+                <h1>Vil du være en af os?</h1>
+                <button>Søg job</button>
+            </div>
+        </section>
+
+
+        <!-- LAV OM TIL FOOTER -->
+        <section> 
+            <span><a href="#top"><img src="Materialer/baseline-keyboard-arrow-up.svg"></a></span>
+            <div class="wrapper">
+                <h1>Kontakt os</h1>
+                <h2>Hovedkvarter</h2>
+                <p>Fuglebækvej 5-9, 2700 Kastrup</p>
+                <p>Telefon: +45 4396 3466</p>
+                <p>kontakt@bring.dk</p>
+
+                <h2>Bud</h2>
+                <p>Fuglebækvej 5-9, 2700 Kastrup</p>
+                <p>Birkedam 18, 6000 Kolding</p>
+                <p>Hans Egedes Vej 18, 5210 Odense Nv</p>
+                <p>Norddigesvej 3, 8240 Risskov</p>
+
+                <h2>Tempereret transport</h2>
+                <p>Gasværkvej 48, 9000 Aalborg</p>
+
+                <h2>Gods</h2>
+                <p>Fuglebækvej 5-9, 2700 Kastrup</p>
+                <p>Norddigesvej 3, 8240 Risskov</p>
+
+                <h2>Pakker</h2>
+                <p>Fuglebækvej 5-9, 2700 Kastrup</p>
+                <p>Birkedam 18, 6000 Kolding</p>
+
+                <div class="SoMe">
+                    <i class="facebook">
+                        <img src="Materialer/facebook-square-brands.svg" alt="">
+                    </i>
+
+                    <i class="linkedin">
+                        <img src="Materialer/linkedin-brands.svg" alt="">
+                    </i>
+
+                    <i class="twitter">
+                        <img src="Materialer/twitter-square-brands.svg" alt="">
+                    </i>
+
+                    <i class="instagram">
+                        <img src="Materialer/instagram-square-brands.svg" alt="">
+                    </i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    </div>
+
+
+</body>
+</html>
