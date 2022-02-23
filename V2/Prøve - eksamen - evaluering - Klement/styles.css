@@ -1,0 +1,506 @@
+/* Styling til mobiludgave */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p, h2, h3
+{
+    margin: 2rem 0;
+}
+
+h1 
+{
+    font-size: 1.7rem;
+    /* font-weight:bold; */
+    /* text-transform:none; */
+}
+
+h2
+{
+    font-size: 1.1rem;
+}
+
+body
+{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+    /* width: 1024px; */
+    overflow-x: hidden;
+}
+
+header
+{
+    display: block;
+    /* display: flex; */
+    height: 55px;
+    width: 100vw;
+    /* position: sticky; */
+    /* position:fixed; */
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    /* position:relative; */
+    background-color: white;
+}
+
+header img
+{
+    height: 40px;
+    /* align-self: center; */
+    /* position: absolute; */
+    /* top: 15px; */
+    /* right: 10px; */
+}
+
+/* Separat styling for menuikoner */
+header>img
+{
+    z-index: 6;
+    /* height: 40px; */
+}
+
+header>img:nth-of-type(2)
+{
+    /* flex-grow: 2; */
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    /* left: 300px; */
+}
+
+/* Fælles styling for checkbox og menuikoner */
+.menu-btn, .menuicon, .closeicon
+{
+    height: 40px;
+    position: absolute;
+    /* position: sticky; */
+    top: 5px;
+    right: 10px;
+}
+
+/* Separat styling for checkbox */
+.menu-btn
+{
+    /* display: none; */
+    display: block;
+    width: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input.menu-btn
+{
+    /* display: none; */
+}
+
+.menu-btn ~ .menuicon
+{
+    display: block;
+    /* display: none; */
+}
+
+.menu-btn:checked ~ .menuicon
+{
+    display: none;
+    /* display: none; */
+}
+
+.menu-btn ~ .closeicon
+{
+    display: none;
+}
+
+.menu-btn:checked ~ .closeicon
+{
+    display: block;
+}
+
+.menu-btn:checked ~ nav
+{
+    transform: translatex(0);
+    /* overflow-y: scroll; */
+    background-color: white;
+    overflow-y: auto;
+}
+
+nav
+{
+    /* display: none; */
+    /* display: flex;  */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    /* justify-content: end; */
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
+    height: 95vh;
+    /* background-color: hsl(0, 0%, 50%); */
+    position: absolute;
+    /* right: 10px; */
+    top: 55px;
+    bottom:0;
+    /* padding-left: 2rem; */
+    /* width: 690px; */
+    width: 97vw;
+    /* padding-right: 2rem; */
+    transform: translatex(calc(300px + 4rem));
+    transition: all 200ms ease-out;
+    overflow-y: auto;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+nav ul
+{
+    /* I mobilvisning skal menuen ikke vises, før brugeren har klikket på hamburger menu ikonet */
+    /* display: flex; */
+    display: none;
+    /* display: block; */
+    /* display: none; */
+    /* width: 100%; */
+    /* width: 11rem; */
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    /* background-color: hsl(0, 0%, 50%); */
+    background-color: white;
+    /* padding: 1rem; */
+    /* padding-top: 2rem; */
+    /* text-align: end; */
+    /* text-align: center; */
+    row-gap: 10px;
+    /* overflow-y: scroll; */
+    /* height: 1500px; */
+    /* height: 500px; */
+    height: 100%;
+}
+
+.menu-btn:checked ~ nav ul {
+    display: flex;
+    flex-direction: column;
+    /* transform: translatex(0) */
+    /* flex-direction: row; */
+    /* position: absolute; */
+    /* top: 5px; */
+    /* right: 10px; */
+    /* display: none; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* visibility: visible; */
+    /* width: 400px; */
+    /* height: 600px; */
+    /* overflow-y: scroll; */
+}
+
+.menu-btn:checked ~ nav ul h3 
+{
+    margin: 0px;
+}
+
+nav ul li
+{
+    padding: 0rem 1rem;
+    list-style-type: none;
+}
+
+.menu-btn:checked ~ nav ul li::before
+{
+    content: url(img/baseline-keyboard-arrow-right.svg);
+}
+
+.menu-btn:checked nav ul li::before
+{
+    /* content: url(img/baseline-keyboard-arrow-right.svg); */
+    /* display: inline; */
+    /* background-image: url(img/baseline-keyboard-arrow-right.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100px 82px; */
+    /* width: 10px; */
+    /* height: 20px; */
+}
+
+.menu-btn:checked ~ nav ul li:last-of-type
+{
+    background-color: hsl(0, 0%, 95%);
+    /* gap: 20px; */
+    border:1rem solid hsl(0, 0%, 95%);
+    border-bottom: 4rem transparent hsla(0, 0%, 95%, 0.0);
+    /* border-bottom:4rem solid hsla(0, 0%, 95%, 0.0); */
+    /* margin-top: 4rem; */
+    margin: 4rem 0rem;
+    /* margin-bottom: 6rem; */
+    /* padding: 1rem 1rem; */
+    padding: 1rem 0rem;
+}
+
+.menu-btn:checked ~ nav ul li:last-of-type::before
+{
+    content: none;
+}
+
+
+nav ul li:hover
+{
+    /* background-color: hsla(0, 0%, 100%, 0.3); */
+}
+
+nav ul li a
+{
+    /* align-self: center; */
+    text-decoration: none;
+    /* text-align: center; */
+    /* width: 100%; */
+    /* padding: 5px; */
+    /* margin: 2rem; */
+    /* padding-left: 0; */
+}
+
+nav ul li a:hover
+{
+    /* align-self: center; */
+    /* text-decoration: none; */
+    /* padding: 1rem; */
+    /* padding-left: 0; */
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.menu-btn:checked ~ nav ul li a 
+{
+
+}
+
+.menu-btn:checked ~ nav ul li:last-of-type p
+{
+    margin: 0rem;
+}
+
+main
+{
+    /* margin: 0.5rem; */
+    /* width: 1024px; */
+}
+
+main img {
+    /* width: 1024px; */
+}
+
+.section-divide-arrow
+{
+    fill:#fff;
+    /* fill:black; */
+    /* fill: white; */
+
+}
+
+main section, footer
+{
+   	/* max-width: 720px; */
+    /* width: 1024px; */
+
+}
+
+main section:nth-of-type(1)
+{
+background-image: url(img/hero-02.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+color: white;
+}
+
+main section:nth-of-type(1) article
+{
+    padding: 4rem 0rem;
+}
+main section:nth-of-type(2)
+{
+    /* display: flex; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+/* background-size: auto; */
+/* color: white; */
+}
+
+main section:nth-of-type(2) img
+{
+    height: 200px;
+    width: 200px;
+}
+
+main section:nth-of-type(2) article
+{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+main section:nth-of-type(3)
+{
+background-color: yellow;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+/* color: white; */
+}
+
+main section:nth-of-type(4)
+{
+background-color: green;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+color: white;
+}
+
+main section:nth-of-type(5)
+{
+background-color: white;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+/* color: white; */
+}
+
+main section:nth-of-type(6)
+{
+background-color: yellow;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+/* color: white; */
+}
+
+main section:nth-of-type(7)
+{
+background-image: url(img/budbil1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: auto; */
+color: white;
+}
+
+main section article
+{
+    /* width: 1000px; */
+    margin: 4rem;
+}
+
+main section article img
+{
+    width: 100%;
+}
+
+/* main section article img
+{
+    width: 100%;
+} */
+
+footer 
+{
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: auto; */
+    color: white;
+    /* content: url(img/icon-sprite-social-media.png); */
+}
+
+/* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
+
+@media only screen and (min-width: 720px)
+{
+
+    body
+    {
+        /* display: block; */
+        /* display: flex; */
+    }
+
+    nav
+    {
+        line-height: 50px;
+        /* background-color: hsl(0, 0%, 50%); */
+        width: 400px;
+        transform: translatex(calc(600px));
+        right: 10px;
+    }
+
+    .menu-btn:checked
+    {
+        /* display: none; */
+    }
+
+    .menu-btn ~ .menuicon
+    {
+        /* display: none; */
+    }
+
+    input.menu-btn
+    {
+        /* display: none; */
+    }
+
+    .menu-btn:checked ~ .closeicon
+{
+    /* display: none; */
+}
+
+    .menu-btn:checked ~ ul {
+        /* display: none; */
+        /* background-color: none; */
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    nav ul
+    {
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-evenly; */
+        /* height: auto;    */
+        /* padding: 0rem; */
+        /* width: 100%; */
+    }
+
+    nav ul li
+    {
+        padding: 0;
+    }
+
+    nav ul li a
+    {
+        /* align-self: auto; */
+        color: gainsboro;
+        padding: 1rem;
+    }
+
+    nav ul li:hover a
+    {
+        color: darkslategray;
+    }
+    
+    main
+    {
+        /* margin: 0.5rem; */
+        /* width: 1024px; */
+    }
+
+    main section, footer
+{
+   	min-width: 1024px;
+    /* width: 1024px; */
+
+}
+
+}
+
