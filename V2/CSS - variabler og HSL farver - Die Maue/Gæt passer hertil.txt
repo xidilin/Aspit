@@ -1,0 +1,13 @@
+    --hue: 0;
+    --header: hsl(0, 0%, 80%);
+    --nav_a: hsl(0, 0%, 100%);
+    --nav_hover: hsl(108, 4%, 74%);
+    --nav-top-footer: hsl(86, 4%, 34%);
+    --menu-text: hsl(0, 0%, 100%);
+    --top_a_arrow: hsla(233, 25%, 26%, 0.8);
+    --nav_side: hsl(108, 4%, 74%);
+    --nav_side_ul: hsla(233, 25%, 26%, 0.8);
+    --nav_side_ul_li: hsl(0, 0%, 100%);
+    --h2: hsl(108, 4%, 74%);
+    --h2_border_buttom: hsl(108, 4%, 74%);
+    --h3: hsla(233, 25%, 26%, 0.9);
