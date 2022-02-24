@@ -247,6 +247,9 @@ main>span img
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 @media only screen and (min-width: 768px)
 {
+
+    
+
     h1
     {
         font-size: 4rem;
