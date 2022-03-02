@@ -6,7 +6,39 @@
     padding: 0;
 }
 
-p, h2, h3
+.container
+{
+    margin: 2rem;
+}
+
+.wrapper
+{
+    margin: 4rem;
+}
+
+.container_example
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* for edge cases: */
+    width: 100%;
+    max-width: 100%;
+}
+
+.wrapper_example
+{
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width: 960px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+}
+
+h2, h3
 {
     margin: 2rem 0;
 }
@@ -100,7 +132,9 @@ header
     top: 0;
     /* position:relative; */
     /* background-color: white; */
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: rgb(39, 39, 39);
+    color: white;
 }
 
 header img
@@ -122,10 +156,10 @@ header>img
 header>img:nth-of-type(2)
 {
     /* flex-grow: 2; */
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 50px;
+    /* height: 30px; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 50px; */
     /* left: 300px; */
 }
 
@@ -222,10 +256,10 @@ nav ul
     /* width: 100%; */
     /* width: 11rem; */
     list-style-type: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 24px;
     /* background-color: hsl(0, 0%, 50%); */
-    background-color: white;
+    /* background-color: white; */
     /* padding: 1rem; */
     /* padding-top: 2rem; */
     /* text-align: end; */
@@ -352,8 +386,8 @@ main img {
 
 .section-divide-arrow
 {
-    fill:#fff;
-    /* fill:black; */
+    /* fill:#fff; */
+    fill:black;
     /* fill: white; */
 
 }
@@ -376,12 +410,12 @@ main section:nth-of-type(1)
 
 main section:nth-of-type(1) article
 {
-    padding: 4rem 0rem;
+    /* padding: 4rem 0rem; */
 }
 main section:nth-of-type(2)
 {
     /* display: flex; */
-    /* background-color: white; */
+    background-color: #e0dede;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -392,7 +426,7 @@ main section:nth-of-type(2)
 main section:nth-of-type(2) img
 {
     height: 200px;
-    width: 200px;
+    width: 300px;
 }
 
 main section:nth-of-type(2) article
@@ -449,13 +483,26 @@ footer
     font-weight:700;
     /* background-color: gray; */
     /* background-color: black; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-color: rgb(39, 39, 39);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: auto; */
-    color: white;
+    color: #808080;
     /* content: url(img/icon-sprite-social-media.png); */
+    /* list-style-type: none; */
 }
+
+footer div ul
+{
+    list-style-type: none;
+}
+
+footer div ul li a
+{
+    color: #808080;
+}
+
 
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 
@@ -471,8 +518,8 @@ footer
 
     h1 
     {
-        display: inline-block;
-        margin: 0px;
+        /* display: inline-block; */
+        /* margin: 0px; */
     }
 
     body > .below
@@ -490,19 +537,33 @@ footer
         /* display: block; */
         /* display: inline-block; */
         /* display: inline-flex; */
-        display: block;
+        display: flex;
         flex-direction: row;
         position: sticky;
         width: 100%;
         /* height: 80px; */
         /* height: 125px; */
         height: 8.5vw;
+        max-height: 80px;
+        justify-content: space-between;
+        /* align-items: center; */
     }
 
     header > h1
     {
         /* font-size: 3.9rem; */
-        font-size: 5vw;
+        /* font-size: 5vw; */
+
+        /* How Do You Do max-font-size in CSS? */
+
+        /* font-size: max(30vw, 30px); */
+        /* font-size: min(max(16px, 4vw), 22px); */
+        /* font-size: clamp(16px, 4vw, 22px); */
+
+        /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+        /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
+        /* font-size: calc() */
+        font-size: clamp(20px, 5vw, 60px);
     }
 
     nav
@@ -511,6 +572,7 @@ footer
         /* display: inline-block; */
         /* display: flex; */
         display: inline;
+        position: static;
         /* line-height: 50px; */
         /* background-color: hsl(0, 0%, 50%); */
         /* width: 400px; */
@@ -571,25 +633,43 @@ footer
         /* height: auto;    */
         /* padding: 0rem; */
         /* width: 100%; */
+        align-items: flex-end;
+    }
+
+    nav ul hr
+    {
+        display: none;
     }
 
     nav ul li
     {
-        padding: 0;
+        /* padding: 0; */
+        padding: 1rem 3rem 0.7rem 0rem;
     }
 
     nav ul li a
     {
         /* align-self: auto; */
         /* color: gainsboro; */
-        color: black;
-        padding: 1rem;
+        color: white;
+        /* padding: 1rem; */
+        font-size: 2vw;
     }
 
-    nav ul li:hover a
+    nav ul li a:link
+    {
+        color: white;
+    }
+
+    nav ul li a:visited
+    {
+        color: white;
+    }
+
+    /* nav ul li:hover a
     {
         color: darkslategray;
-    }
+    } */
     
     main
     {
