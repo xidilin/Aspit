@@ -563,7 +563,7 @@ footer div ul li a
         /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
         /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
         /* font-size: calc() */
-        font-size: clamp(20px, 5vw, 60px);
+        font-size: clamp(10px, 5vw, 60px);
     }
 
     nav
