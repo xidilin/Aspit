@@ -1,0 +1,523 @@
+/* IMPORTS ################################################ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* GLOBAL STYLING ########################################### */
+:root {
+  --primary: #fff7f3;
+  --light: #fefdf9;
+  --harry: #fef2f2;
+  --black-text: #333333;
+  --brown-text: #543d32;
+  --lightgrey-text: #707070;
+  --orange: #fe7d4e;
+
+  --header-height: 78px;
+  --secondary-header-height: 150px;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* UTILITY ################################################## */
+.to-uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bolder;
+}
+.fade {
+  opacity: 70%;
+}
+
+/* GENERAL STYLING ########################################## */
+h2 {
+  font-size: 1.6rem;
+}
+
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  color: var(--black-text);
+  text-decoration: none;
+}
+
+button {
+  color: var(--primary);
+  font-size: 20px;
+  background-color: var(--orange);
+  border: 1px solid #ff5b1f;
+  border-radius: 40px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* HEADER ################################################### */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-elements {
+  background-color: var(--primary);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.logo,
+.footer-logo {
+  margin-top: 14px;
+}
+
+.logo span,
+.footer-logo span {
+  color: var(--orange);
+}
+
+.menu-icon {
+  width: 30px;
+  margin-right: 8px;
+}
+
+#toggle {
+  position: absolute;
+  transform: scale(3);
+  top: 30px;
+  right: 33px;
+  opacity: 0;
+}
+
+#toggle:hover {
+  cursor: pointer;
+}
+
+/* NAVIGATION MENU ########################################## */
+.nav {
+  z-index: 1;
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  border-bottom: 2px solid var(--orange);
+}
+
+#toggle:checked + nav{
+  right: 0;
+}
+
+.nav ul {
+  list-style-position: inside;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.nav li {
+  padding: 18px 40px;
+  background-repeat: no-repeat;
+  background-position: 1em 1.1em;
+}
+
+/* Apply to all except for the last child */
+.nav li:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.nav li:hover {
+  background-color: var(--orange);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--black-text);
+}
+
+/* HERO ##################################################### */
+.hero {
+  padding-top: var(--header-height);
+  height: 100vh;
+}
+
+/* The hero image */
+.hero-image {
+  /* "linear-gradient" to darken image slightly to make text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/hero\ image.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  text-align: center;
+  color: var(--primary);
+  line-height: 1.6rem;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.hero-text p {
+  max-width: 90%;
+}
+
+/* SECONDHAND ############################################### */
+.secondhand {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+}
+
+.secondhand-box {
+  padding: 0;
+  max-width: 1460px;
+}
+
+.secondhand-header {
+  color: var(--brown-text);
+  fill: var(--brown-text);
+  margin: 0 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.secondhand-header a {
+  color: var(--brown-text);
+  display: flex;
+  align-items: center;
+}
+
+.secondhand-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secondhand-books img {
+  flex: 0 1 auto;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* MONTHLY-BOOK ############################################# */
+.monthly-book {
+  color: var(--brown-text);
+}
+
+.monthly-book-wrapper {
+  background-color: var(--harry);
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.monthly-book-box {
+  background-color: var(--light);
+  padding: 0 50px;
+  max-width: 370px;
+  font-size: 1.2rem;
+}
+
+.harry-box {
+  background-color: var(--harry);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.harry-box img {
+  margin: 20px 0;
+}
+
+.harry-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.harry-text h2 {
+  color: #774026;
+}
+
+.harry-text h4 {
+  margin-bottom: 30px;
+}
+
+.harry-text h5 {
+  margin-bottom: 5px;
+}
+
+.harry-text p {
+  margin-top: 0;
+  margin-left: 30px;
+  max-width: 46ch;
+}
+
+.author {
+  display: flex;
+}
+
+.author div {
+  margin: 0 30px;
+}
+
+/* BOOK-CLUB ################################################ */
+.book-club {
+  background-color: var(--primary);
+  height: 100%;
+}
+
+.book-club-image {
+  background-image: url("img/Cover-Bogklub.jpg");
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.book-club button {
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER ################################################# */
+footer {
+  color: var(--brown-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+}
+
+footer div {
+  flex: 0 1 auto;
+}
+
+footer h5 {
+  color: var(--black-text);
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+footer h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+footer p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  /* fill: var(--orange); */
+}
+
+.social > a > svg {
+  fill: var(--orange);
+}
+
+.footer-image {
+  margin: 20px;
+}
+
+/* 
+MEDIA QUERY 1024px ###################################################################
+######################################################################################
+######################################################################################
+*/
+
+@media only screen and (min-width: 1024px) {
+  /* NAVIGATION MENU ########################################## */
+  .nav {
+    width: 250px;
+    border-left: 2px solid var(--orange);
+  }
+
+  .nav ul {
+    list-style-type: disc;
+    text-align: start;
+    width: 100%;
+  }
+
+  .nav li:not(:last-child) {
+    border-bottom: none;
+  }
+
+  /* HERO ##################################################### */
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .secondhand-box {
+    padding: 100px 0;
+  }
+
+  /* MONTHLY-BOOK ############################################# */
+  .harry-text {
+    align-items: initial;
+  }
+
+  .harry-text h2,
+  .harry-text button {
+    margin-left: 30px;
+  }
+
+  .harry-text button {
+    margin-top: 200px;
+  }
+}
+
+/* 
+MEDIA QUERY 1200px ###################################################################
+######################################################################################
+######################################################################################
+*/
+
+@media only screen and (min-width: 1200px) {
+  /* HEADER ################################################### */
+  .header-elements {
+    margin: 0;
+    height: var(--secondary-header-height);
+  }
+
+  .logo {
+    padding: 40px 60px;
+  }
+
+  #toggle,
+  .menu-icon {
+    display: none;
+  }
+
+  /* NAVIGATION MENU ########################################## */
+  .nav {
+    width: initial;
+    position: absolute;
+
+    /* Calculate position based on header height */
+    top: calc(var(--secondary-header-height) / 3);
+    right: 0;
+    transition: right 0.5s;
+
+    border: 0;
+  }
+
+  .nav ul {
+    display: flex;
+    list-style-position: inside;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    align-self: unset;
+    text-align: start;
+    width: 100%;
+  }
+
+  .nav li {
+    padding: 0;
+    margin: 20px;
+    background-repeat: no-repeat;
+    width: initial;
+  }
+
+  /* Apply to only last child */
+  .nav li:last-child {
+    margin-left: 30px;
+  }
+
+  /* Apply to all except for the last child */
+  .nav li:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .nav li:hover {
+    background-color: initial;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--black-text);
+  }
+
+  .button {
+    color: var(--orange);
+    background-color: #ffe6dc;
+    padding: 20px 40px;
+    border: 1px solid #ffb89e;
+    border-radius: 40px;
+  }
+
+  /* HERO ##################################################### */
+  .br-remove {
+    display: none;
+  }
+
+  .hero-text p {
+    font-size: 26px;
+    line-height: 2.2rem;
+    max-width: 1000px;
+  }
+
+  /* MONTHLY-BOOK ############################################# */
+  .harry-text button {
+    margin-top: 200px;
+  }
+
+  /* BOOK-CLUB ################################################ */
+  .book-club-box {
+    height: 550px;
+  }
+
+  .book-club-image {
+    height: 70%;
+  }
+
+  .book-club button {
+    margin: 0;
+  }
+}
