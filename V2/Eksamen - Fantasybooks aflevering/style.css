@@ -236,18 +236,28 @@ button:hover {
 }
 
 .monthly-book-wrapper {
-  background-color: var(--harry);
+  background-color: var(--primary);
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* align-content: stretch; */
 }
 
 .monthly-book-box {
+  display: flex;
   background-color: var(--light);
   padding: 0 50px;
   max-width: 370px;
   font-size: 1.2rem;
+  justify-content: center;
+  align-items:center;
+  /* flex-grow: 1; */
+}
+
+.monthly-book-box a {
+  display: flex;
+  align-items: center;
 }
 
 .harry-box {
@@ -255,7 +265,9 @@ button:hover {
   padding: 20px 40px;
   display: flex;
   justify-content: center;
+  /* align-items:center; */
   flex-wrap: wrap;
+  /* flex-grow: 1; */
 }
 
 .harry-box img {
@@ -266,6 +278,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   margin: 0 20px;
 }
 
