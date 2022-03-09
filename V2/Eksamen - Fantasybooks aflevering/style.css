@@ -248,10 +248,13 @@ button:hover {
   display: flex;
   background-color: var(--light);
   padding: 0 50px;
-  max-width: 370px;
+  /* max-width: 370px; */
+  max-width: 525px;
   font-size: 1.2rem;
   justify-content: center;
-  align-items:center;
+  flex-wrap: wrap;
+  /* align-items:center; */
+  align-content:space-around;
   /* flex-grow: 1; */
 }
 
@@ -262,12 +265,13 @@ button:hover {
 
 .harry-box {
   background-color: var(--harry);
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
+  padding: 60px 60px;
   display: flex;
   justify-content: center;
   /* align-items:center; */
   flex-wrap: wrap;
-  /* flex-grow: 1; */
+  /* flex-grow: 2; */
 }
 
 .harry-box img {
